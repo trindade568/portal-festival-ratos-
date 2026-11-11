@@ -26,7 +26,7 @@
   --success: #b6ff2e;
   --gradient: linear-gradient(105deg, #ff2e3f 0%, #ff6b1a 52%, #f2e205 100%);
   --gradient-soft: linear-gradient(105deg, rgba(255, 46, 63, 0.18), rgba(255, 107, 26, 0.14), rgba(242, 226, 5, 0.14));
-  --font-display: 'Anton', 'Arial Narrow', 'Segoe UI', system-ui, sans-serif;
+  --font-display: 'Impact', 'Haettenschweiler', 'Anton', 'Arial Narrow Bold', 'Arial Black', sans-serif;
   --font-body: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, 'Cascadia Code', Consolas, monospace;
   --radius-sm: 2px;
@@ -61,7 +61,8 @@ body {
   font-size: 16px;
   min-height: 100vh;
   overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
 }
 
 body::before {
