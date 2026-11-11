@@ -2040,12 +2040,12 @@ body::after {
   inset: 0;
   pointer-events: none;
   z-index: 0;
-  opacity: 0.5;
+  opacity: 0.3;
   background-image:
-    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.022) 0 1px, transparent 1px 3px),
-    radial-gradient(rgba(255, 255, 255, 0.05) 0.6px, transparent 0.7px);
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.018) 0 1px, transparent 1px 3px),
+    radial-gradient(rgba(255, 255, 255, 0.035) 0.6px, transparent 0.7px);
   background-size: 100% 3px, 5px 5px;
-  mix-blend-mode: overlay;
+  mix-blend-mode: soft-light;
 }
 
 /* ---------- Tipografia de cartaz ---------- */
@@ -2074,7 +2074,6 @@ h3 { line-height: 1.05; }
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: saturate(1.15);
 }
 
 /* ---------- Cantos retos em toda a interface ---------- */
