@@ -649,58 +649,6 @@ p { text-wrap: pretty; }
   animation: bob 6s ease-in-out infinite;
 }
 
-.float-flyer {
-  left: -18px;
-  bottom: 62px;
-  width: 224px;
-  padding: 16px 17px 15px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  background: linear-gradient(165deg, #f5f0e6 0%, #ddd5c6 100%);
-  border: none;
-  color: #14100e;
-  box-shadow: 8px 8px 0 rgba(255, 46, 63, 0.85), var(--shadow-sm);
-  transform: rotate(-2.5deg);
-  animation-delay: -1.5s;
-  backdrop-filter: none;
-}
-.float-flyer .flyer-stamp {
-  align-self: flex-start;
-  font-family: var(--font-mono);
-  font-size: 0.54rem;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: #8a1f28;
-  border: 1.5px solid #8a1f28;
-  padding: 3px 8px;
-  transform: rotate(-1deg);
-}
-.float-flyer .flyer-title {
-  font-family: var(--font-display);
-  font-weight: 400;
-  text-transform: uppercase;
-  font-size: 1.42rem;
-  line-height: 0.96;
-  letter-spacing: 0.01em;
-}
-.float-flyer .flyer-album {
-  font-family: var(--font-mono);
-  font-size: 0.58rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #4a4038;
-}
-.float-flyer .flyer-meta {
-  font-family: var(--font-mono);
-  font-size: 0.52rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #14100e;
-  border-top: 1px dashed rgba(20, 16, 14, 0.4);
-  padding-top: 8px;
-  margin-top: 2px;
-}
 
 .float-speaker {
   right: -14px;
@@ -2021,7 +1969,6 @@ p { text-wrap: pretty; }
   .hero-visual { min-height: 380px; }
   .orbit-ring { width: 340px; height: 340px; }
   .event-pass { width: min(320px, 92%); }
-  .float-flyer { left: 0; bottom: 8px; transform: scale(0.9) rotate(-2.5deg); transform-origin: left bottom; }
   .float-speaker { right: 0; top: 6px; transform: scale(0.9); transform-origin: right top; }
   .hero-meta { gap: 10px; }
   .team-grid { grid-template-columns: 1fr; }
