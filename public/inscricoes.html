@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08070a">
+  <title>Ingressos — Ratos de Porão · 45 Anos de Barulho</title>
+  <meta name="description" content="Garanta seu ingresso para o 45 Anos de Barulho. Lotes, valores, meia-entrada, orientações de entrada e pagamento simulado.">
+  <link rel="icon" href="assets/favicon.svg?v=rdp45" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css?v=rdp45">
+  <script src="js/app.js?v=rdp45" defer></script>
+  <script src="js/inscricoes.js?v=rdp45" defer></script>
+</head>
+<body data-page="inscricoes">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Ratos de Porão — 45 Anos de Barulho — página inicial">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 1 4 13.5h5.4L8 23l9-13.2h-5.4z"/></svg>
+        </span>
+        <span class="brand-text"><strong>Ratos de Porão</strong><small>45 ANOS DE BARULHO</small></span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
+        <a href="index.html" data-nav="home">Início</a>
+        <a href="trilhas.html" data-nav="trilhas">Line-up</a>
+        <a href="programacao.html" data-nav="programacao">Horários</a>
+        <a href="local.html" data-nav="local">Local</a>
+        <a href="inscricoes.html" data-nav="inscricoes">Ingressos</a>
+        <a href="quem-somos.html" data-nav="quem-somos">Produção</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-primary btn-sm" href="inscricoes.html">Garantir ingresso</a>
+        <button class="nav-toggle" type="button" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="mainNav"><span aria-hidden="true"></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Você está aqui">
+          <a href="index.html">Início</a><span aria-hidden="true">/</span><span aria-current="page">Ingressos</span>
+        </nav>
+        <span class="eyebrow">Bilheteria 2026</span>
+        <h1>Seu lugar na pista<br><span class="gradient-text">começa aqui.</span></h1>
+        <p class="lead">
+          Lotes limitados, meia-entrada para estudantes e um único ingresso para as três noites.
+          Escolha o seu lote, preencha os dados e finalize no checkout simulado.
+        </p>
+        <div class="page-hero-meta">
+          <span class="pill"><span class="dot" aria-hidden="true"></span> Vendas abertas</span>
+          <span class="pill">A partir de R$ 120</span>
+          <span class="pill">Acesso às 3 noites</span>
+          <span class="pill">Pagamento simulado</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-sm" style="padding-top:12px;">
+      <div class="container">
+        <div class="section-head" style="margin-bottom:26px;">
+          <div>
+            <span class="eyebrow">Lotes e valores</span>
+            <h2 style="font-size:clamp(1.6rem,3vw,2.2rem);">Escolha o seu ingresso</h2>
+          </div>
+          <span class="badge badge-warn" id="lotesStatus">Carregando lotes…</span>
+        </div>
+
+        <div class="lote-grid" id="loteGrid" aria-live="polite">
+          <div class="skeleton" style="height:400px;border-radius:26px;"></div>
+          <div class="skeleton" style="height:400px;border-radius:26px;"></div>
+          <div class="skeleton" style="height:400px;border-radius:26px;"></div>
+          <div class="skeleton" style="height:400px;border-radius:26px;"></div>
+        </div>
+
+        <div class="info-banner" style="margin-top:22px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8v.01"/></svg>
+          <div>
+            <strong>Meia-entrada:</strong> o lote estudante exige comprovação de matrícula ativa na entrada.
+            Todos os valores são individuais e incluem acesso às três noites do festival.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">Passo a passo</span>
+            <h2>Como funciona a compra</h2>
+            <p>Quatro etapas simples. Todo o fluxo acontece neste portal, com pagamento simulado para fins acadêmicos.</p>
+          </div>
+        </div>
+        <div class="steps">
+          <article class="step reveal">
+            <h3>Escolha o lote</h3>
+            <p>Compare valores, benefícios e disponibilidade. Os lotes são liberados por ordem de venda.</p>
+          </article>
+          <article class="step reveal" style="--d:70ms">
+            <h3>Preencha seus dados</h3>
+            <p>Informe nome, e-mail, telefone, cidade e a banda de maior interesse.</p>
+          </article>
+          <article class="step reveal" style="--d:140ms">
+            <h3>Finalize o pagamento</h3>
+            <p>Você será redirecionado ao checkout simulado e poderá escolher PIX, cartão ou boleto.</p>
+          </article>
+          <article class="step reveal" style="--d:210ms">
+            <h3>Receba seu protocolo</h3>
+            <p>Na confirmação, guarde o código. Ele será usado na entrada do Galpão do Barulho.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="credenciamento">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">Formulário de compra</span>
+            <h2>Preencha seus dados</h2>
+            <p>Campos com <span style="color:var(--pink);">*</span> são obrigatórios. Ao continuar, você será direcionado ao checkout simulado.</p>
+          </div>
+          <a class="link-arrow" href="#faq">Tirar dúvidas <span aria-hidden="true">→</span></a>
+        </div>
+
+        <div class="checkout-grid">
+          <form class="form-card" id="inscricaoForm" novalidate>
+            <div class="form-grid">
+              <div class="field field-full">
+                <label for="nome">Nome completo <span class="req" aria-hidden="true">*</span></label>
+                <input id="nome" name="nome" type="text" autocomplete="name" placeholder="Como aparece no documento" required maxlength="100">
+                <span class="error" data-error-for="nome"></span>
+              </div>
+
+              <div class="field">
+                <label for="email">E-mail <span class="req" aria-hidden="true">*</span></label>
+                <input id="email" name="email" type="email" autocomplete="email" placeholder="voce@exemplo.com" required maxlength="120">
+                <span class="error" data-error-for="email"></span>
+              </div>
+
+              <div class="field">
+                <label for="telefone">Telefone com DDD <span class="req" aria-hidden="true">*</span></label>
+                <input id="telefone" name="telefone" type="tel" autocomplete="tel" placeholder="(11) 99999-9999" required maxlength="16" inputmode="tel">
+                <span class="error" data-error-for="telefone"></span>
+              </div>
+
+              <div class="field">
+                <label for="empresa">Banda, coletivo ou instituição</label>
+                <input id="empresa" name="empresa" type="text" autocomplete="organization" placeholder="Opcional" maxlength="90">
+              </div>
+
+              <div class="field">
+                <label for="cidade">Cidade <span class="req" aria-hidden="true">*</span></label>
+                <input id="cidade" name="cidade" type="text" autocomplete="address-level2" placeholder="São Paulo / SP" required maxlength="90">
+                <span class="error" data-error-for="cidade"></span>
+              </div>
+
+              <div class="field">
+                <label for="trilha">Banda de maior interesse <span class="req" aria-hidden="true">*</span></label>
+                <select id="trilha" name="trilha" required>
+                  <option value="">Selecione uma banda</option>
+                </select>
+                <span class="hint">O ingresso dá acesso a todas as noites.</span>
+                <span class="error" data-error-for="trilha"></span>
+              </div>
+
+              <div class="field">
+                <label for="lote">Lote selecionado <span class="req" aria-hidden="true">*</span></label>
+                <select id="lote" name="lote" required>
+                  <option value="">Selecione um lote</option>
+                </select>
+                <span class="error" data-error-for="lote"></span>
+              </div>
+
+              <div class="field field-full">
+                <label for="comoConheceu">Como ficou sabendo do festival?</label>
+                <select id="comoConheceu" name="comoConheceu">
+                  <option value="Não informado">Prefiro não informar</option>
+                  <option value="Instagram">Instagram</option>
+                  <option value="YouTube">YouTube</option>
+                  <option value="Spotify">Spotify</option>
+                  <option value="Indicação">Indicação de amigo ou colega</option>
+                  <option value="Rádio pirata">Rádio pirata ou podcast</option>
+                  <option value="Fanzine">Fanzine ou zine</option>
+                  <option value="Universidade">Universidade ou faculdade</option>
+                  <option value="Outro">Outro</option>
+                </select>
+              </div>
+
+              <div class="field field-full">
+                <label class="checkbox">
+                  <input type="checkbox" id="aceite" name="aceite" required>
+                  <span>
+                    Li e aceito o <a href="#faq">regulamento do festival</a> e a
+                    <a href="#faq">política de privacidade</a>, autorizando o uso dos meus dados
+                    para fins de credenciamento e comunicação sobre o Ratos de Porão — 45 Anos de Barulho.
+                    <span class="req" aria-hidden="true">*</span>
+                  </span>
+                </label>
+                <span class="error" data-error-for="aceite"></span>
+              </div>
+            </div>
+
+            <div class="form-alert" id="formAlert" role="alert"></div>
+
+            <div class="form-actions">
+              <button class="btn btn-primary btn-lg" type="submit" id="submitBtn">
+                Ir para o pagamento
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </button>
+              <span class="form-note">Ambiente de demonstração: nenhuma cobrança real será feita.</span>
+            </div>
+          </form>
+
+          <aside class="detail-side" aria-label="Informações sobre o ingresso">
+            <div class="side-card">
+              <h3>O que está incluso</h3>
+              <ul class="check-list">
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Acesso às três noites do festival</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Todos os shows nos três palcos</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Feira de vinil, merch e estúdio de tattoo</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Copo oficial e credencial colecionável</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Afterparty no lounge após o último show</li>
+              </ul>
+              <p class="form-note" style="margin-top:14px;">Meet &amp; greet e áreas de acampamento têm vagas limitadas e são liberados por ordem de chegada.</p>
+            </div>
+
+            <div class="side-card">
+              <h3>Precisa de ajuda?</h3>
+              <p class="small muted" style="margin-bottom:14px;">A produção responde em até um dia útil.</p>
+              <a class="btn btn-ghost btn-block" href="mailto:barulho@45anosderatos.dev.br">barulho@45anosderatos.dev.br</a>
+              <a class="btn btn-outline btn-block" href="#faq" style="margin-top:8px;">Ver perguntas frequentes</a>
+            </div>
+
+            <div class="side-card">
+              <h3>Pagamento simulado</h3>
+              <p class="small muted">Este portal é um projeto acadêmico. O checkout simula PIX, cartão e boleto sem processar dados financeiros reais.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="faq">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">Dúvidas frequentes</span>
+            <h2>Antes de garantir seu lugar</h2>
+            <p>Reunimos as perguntas que mais chegam à produção do festival.</p>
+          </div>
+        </div>
+
+        <div class="faq">
+          <details open>
+            <summary>O ingresso dá acesso a todas as noites?</summary>
+            <div class="faq-answer">Sim. A credencial vale para os três dias e permite circular por todos os palcos. Meet &amp; greet, feira e área de acampamento têm vagas limitadas e exigem retirada de senha no local, por ordem de chegada.</div>
+          </details>
+          <details>
+            <summary>Como funciona a meia-entrada para estudantes?</summary>
+            <div class="faq-answer">O lote estudante é destinado a maiores de 18 anos matriculados em instituições de ensino. É obrigatória a apresentação da carteirinha ou comprovante de matrícula ativo, com foto, na entrada. Sem a comprovação, será cobrada a diferença para o lote regular vigente.</div>
+          </details>
+          <details>
+            <summary>Posso transferir meu ingresso para outra pessoa?</summary>
+            <div class="faq-answer">Sim, até 7 dias antes do festival, mediante solicitação pelo e-mail barulho@45anosderatos.dev.br. A transferência é gratuita e o novo participante deve apresentar o protocolo atualizado na entrada.</div>
+          </details>
+          <details>
+            <summary>Qual é a política de cancelamento e reembolso?</summary>
+            <div class="faq-answer">Você pode solicitar o reembolso integral em até 7 dias corridos após a compra, conforme o Código de Defesa do Consumidor. Após esse prazo, reembolsamos 50% do valor até 15 dias antes do festival. Não há reembolso após esse período, mas a transferência continua disponível.</div>
+          </details>
+          <details>
+            <summary>O festival tem estacionamento e acampamento?</summary>
+            <div class="faq-answer">O galpão tem estacionamento próprio com vagas limitadas e uma área de acampamento coberta para quem vem de fora, liberada a partir das 14h de cada dia. O espaço para barracas é gratuito para quem tem ingresso das três noites, mas as vagas são por ordem de chegada.</div>
+          </details>
+          <details>
+            <summary>Como funciona o pagamento neste portal?</summary>
+            <div class="faq-answer">O pagamento é totalmente simulado e faz parte do projeto acadêmico. Nenhum valor é cobrado e nenhum dado de cartão é armazenado. Após finalizar, você recebe um protocolo válido para demonstrar o fluxo completo de compra.</div>
+          </details>
+          <details>
+            <summary>O evento tem acessibilidade e opções alimentares?</summary>
+            <div class="faq-answer">Sim. O Galpão do Barulho conta com piso tátil, rampas, banheiros adaptados, área sensorial e equipe de apoio. Os food trucks têm opções vegetarianas, veganas e sem glúten, além de água potável gratuita em todos os setores.</div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-sm">
+      <div class="container">
+        <div class="cta-band reveal">
+          <div>
+            <span class="eyebrow">Ainda em dúvida?</span>
+            <h2 style="margin-top:14px;">Fale com a produção.</h2>
+            <p>Atendemos de segunda a sexta, das 9h às 18h. Para bandas, selos, coletivos e imprensa, temos canais dedicados.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-primary btn-lg" href="mailto:barulho@45anosderatos.dev.br">Enviar e-mail</a>
+            <a class="btn btn-ghost" href="local.html">Como chegar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Ratos de Porão — 45 Anos de Barulho — página inicial">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 1 4 13.5h5.4L8 23l9-13.2h-5.4z"/></svg>
+        </span>
+        <span class="brand-text"><strong>Ratos de Porão</strong><small>45 ANOS DE BARULHO</small></span>
+      </a>
+          <p>45 anos de barulho em três noites de punk e thrash no Galpão do Barulho. Um festival fictício criado como projeto acadêmico de Desenvolvimento Web.</p>
+          <div class="footer-contact">
+            <a href="mailto:barulho@45anosderatos.dev.br">barulho@45anosderatos.dev.br</a><br>
+            São Paulo · SP · 04 a 06 de dezembro de 2026
+          </div>
+          <div class="social-links">
+            <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+            <a href="https://youtube.com/" target="_blank" rel="noopener" aria-label="YouTube"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3z" fill="currentColor" stroke="none"/></svg></a>
+            <a href="https://open.spotify.com/" target="_blank" rel="noopener" aria-label="Spotify"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M7.5 9.5c3-.8 6.2-.5 8.8 1M8 12.6c2.5-.6 5.1-.3 7.2.9M8.6 15.6c2-.5 4.1-.2 5.8.8"/></svg></a>
+            <a href="https://bandcamp.com/" target="_blank" rel="noopener" aria-label="Bandcamp"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l10-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="16" cy="16" r="3"/></svg></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Festival</h4>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="trilhas.html">Line-up</a></li>
+            <li><a href="programacao.html">Horários</a></li>
+            <li><a href="local.html">Local e estrutura</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Participe</h4>
+          <ul>
+            <li><a href="inscricoes.html">Ingressos e lotes</a></li>
+            <li><a href="inscricoes.html#faq">Perguntas frequentes</a></li>
+            <li><a href="quem-somos.html">Produção</a></li>
+            <li><a href="checkout.html">Checkout simulado</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <ul>
+            <li><a href="mailto:barulho@45anosderatos.dev.br">barulho@45anosderatos.dev.br</a></li>
+            <li><a href="mailto:imprensa@45anosderatos.dev.br">imprensa@45anosderatos.dev.br</a></li>
+            <li><a href="tel:+551119812026">+55 11 1981-2026</a></li>
+            <li><a href="quem-somos.html">Projeto acadêmico</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="disclaimer-bar">
+        <strong>Evento fictício.</strong> Ratos de Porão — 45 Anos de Barulho é um festival imaginário criado para um trabalho acadêmico de Desenvolvimento Web. Não há venda real de ingressos e este portal não tem vínculo com a banda, seus integrantes ou representantes.
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Ratos de Porão · 45 Anos de Barulho. Projeto acadêmico de Desenvolvimento Web.</span>
+        <span class="footer-tech"><span class="status-dot" aria-hidden="true"></span> Servidor local · porta 2000 <span class="dot-sep">/</span> Node.js + API REST</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

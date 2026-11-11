@@ -1,0 +1,92 @@
+[
+  {
+    "nome": "Ana Beatriz Carvalho",
+    "ra": "2026-014578",
+    "funcao": "Direção de Arte & Identidade Visual",
+    "foto": "assets/equipe/time-ana.svg",
+    "cor": "#ff2e3f",
+    "resumo": "Assina a identidade visual do 45 Anos de Barulho: cartazes, tipografia rasgada, texturas de xerox e o design system do portal. Traduz o universo punk em interfaces acessíveis, responsivas e com foco em performance.",
+    "tecnologias": ["HTML5", "CSS3", "JavaScript", "Design System", "Figma", "Acessibilidade"],
+    "contribuicoes": [
+      "Identidade visual e design system do festival",
+      "Layout responsivo e microinterações",
+      "Testes de acessibilidade e navegação por teclado"
+    ],
+    "links": { "github": "https://github.com/", "linkedin": "https://linkedin.com/" }
+  },
+  {
+    "nome": "Bruno Tavares Lima",
+    "ra": "2026-009312",
+    "funcao": "Produção Técnica & Bilheteria",
+    "foto": "assets/equipe/time-bruno.svg",
+    "cor": "#f2e205",
+    "resumo": "Projetou o servidor HTTP, a API REST e a camada de persistência das inscrições. É quem garante que a fila da bilheteria não pare: validação de dados, códigos de status e integração entre frontend e backend.",
+    "tecnologias": ["Node.js", "JavaScript", "APIs REST", "HTTP", "JSON", "Segurança"],
+    "contribuicoes": [
+      "Servidor na porta 2000 e roteamento da API",
+      "Validação e sanitização das inscrições",
+      "Persistência atômica em arquivo JSON"
+    ],
+    "links": { "github": "https://github.com/", "linkedin": "https://linkedin.com/" }
+  },
+  {
+    "nome": "Carla Mendes Oliveira",
+    "ra": "2026-017204",
+    "funcao": "Experiência do Público & Acessibilidade",
+    "foto": "assets/equipe/time-carla.svg",
+    "cor": "#ff6b1a",
+    "resumo": "Conduziu a pesquisa com o público, desenhou a jornada de compra do ingresso e revisou todo o portal sob a ótica de acessibilidade. Garante que a pista, o camarote e o checkout sejam claros para todo mundo.",
+    "tecnologias": ["UX Research", "Wireframes", "WCAG", "Testes de usabilidade", "Conteúdo"],
+    "contribuicoes": [
+      "Jornada de credenciamento e checkout simulado",
+      "Diretrizes de acessibilidade e contraste",
+      "Revisão de textos e arquitetura da informação"
+    ],
+    "links": { "github": "https://github.com/", "linkedin": "https://linkedin.com/" }
+  },
+  {
+    "nome": "Daniel Rocha Santos",
+    "ra": "2026-005887",
+    "funcao": "Infraestrutura do Galpão & Operações",
+    "foto": "assets/equipe/time-daniel.svg",
+    "cor": "#9fb4c7",
+    "resumo": "Configurou o ambiente local, o processo de execução do servidor e as verificações de qualidade. Também documentou o passo a passo de deploy e os requisitos de infraestrutura do galpão.",
+    "tecnologias": ["Linux", "Docker", "Git", "CI/CD", "Monitoramento", "Shell"],
+    "contribuicoes": [
+      "Ambiente de execução local na porta 2000",
+      "Scripts de start e checklist de deploy",
+      "Monitoramento de logs e tratamento de erros"
+    ],
+    "links": { "github": "https://github.com/", "linkedin": "https://linkedin.com/" }
+  },
+  {
+    "nome": "Eduarda Nunes Ferreira",
+    "ra": "2026-012045",
+    "funcao": "Curadoria de Dados & Line-up",
+    "foto": "assets/equipe/time-eduarda.svg",
+    "cor": "#f2e205",
+    "resumo": "Modelou a estrutura de dados do festival, das bandas e dos horários. Desenvolveu os endpoints de consulta e a lógica de lotes, vendas e vagas restantes exibidas no portal.",
+    "tecnologias": ["Modelagem de dados", "JSON", "SQL", "Python", "Integrações", "Power BI"],
+    "contribuicoes": [
+      "Modelagem das bandas, integrantes e shows",
+      "Cálculo de lotes e vagas em tempo real",
+      "Integração de dados entre API e frontend"
+    ],
+    "links": { "github": "https://github.com/", "linkedin": "https://linkedin.com/" }
+  },
+  {
+    "nome": "Felipe Andrade Moreira",
+    "ra": "2026-020111",
+    "funcao": "Qualidade & Documentação",
+    "foto": "assets/equipe/time-felipe.svg",
+    "cor": "#ff2e3f",
+    "resumo": "Responsável pelos testes funcionais, validação do fluxo de compra de ingressos e documentação técnica do projeto. Garante que todos os cenários — inclusive os de erro — se comportem como esperado.",
+    "tecnologias": ["Testes de software", "Cypress", "Postman", "Documentação", "Git", "Scrum"],
+    "contribuicoes": [
+      "Plano de testes e validação dos endpoints",
+      "Testes de formulário e mensagens de erro",
+      "README e documentação da API"
+    ],
+    "links": { "github": "https://github.com/", "linkedin": "https://linkedin.com/" }
+  }
+]

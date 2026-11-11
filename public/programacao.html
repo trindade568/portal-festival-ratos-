@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08070a">
+  <title>Horários — Ratos de Porão · 45 Anos de Barulho</title>
+  <meta name="description" content="Grade completa do festival: portões, shows, meet & greet, DJs e afterparty nos três palcos do Galpão do Barulho.">
+  <link rel="icon" href="assets/favicon.svg?v=rdp45" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css?v=rdp45">
+  <script src="js/app.js?v=rdp45" defer></script>
+  <script src="js/programacao.js?v=rdp45" defer></script>
+</head>
+<body data-page="programacao">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Ratos de Porão — 45 Anos de Barulho — página inicial">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 1 4 13.5h5.4L8 23l9-13.2h-5.4z"/></svg>
+        </span>
+        <span class="brand-text"><strong>Ratos de Porão</strong><small>45 ANOS DE BARULHO</small></span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
+        <a href="index.html" data-nav="home">Início</a>
+        <a href="trilhas.html" data-nav="trilhas">Line-up</a>
+        <a href="programacao.html" data-nav="programacao">Horários</a>
+        <a href="local.html" data-nav="local">Local</a>
+        <a href="inscricoes.html" data-nav="inscricoes">Ingressos</a>
+        <a href="quem-somos.html" data-nav="quem-somos">Produção</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-primary btn-sm" href="inscricoes.html">Garantir ingresso</a>
+        <button class="nav-toggle" type="button" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="mainNav"><span aria-hidden="true"></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Você está aqui">
+          <a href="index.html">Início</a><span aria-hidden="true">/</span><span aria-current="page">Horários</span>
+        </nav>
+        <span class="eyebrow">04, 05 e 06 de dezembro · 2026</span>
+        <h1>Três noites.<br><span class="gradient-text">Nenhum minuto de silêncio.</span></h1>
+        <p class="lead">
+          Portões, shows, meet &amp; greet, DJs e afterparty — a grade completa dos três palcos do Galpão do Barulho.
+          Favorite os shows e chegue com o roteiro pronto.
+        </p>
+        <div class="page-hero-meta">
+          <span class="pill"><span class="dot" aria-hidden="true"></span> 47 atrações</span>
+          <span class="pill">3 palcos</span>
+          <span class="pill">6 bandas</span>
+          <span class="pill">RDP nas três noites</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-sm" style="padding-top:12px;">
+      <div class="container">
+        <div class="day-tabs" id="dayTabs" role="tablist" aria-label="Selecione a noite do festival">
+          <div class="skeleton" style="height:56px;width:180px;border-radius:11px;"></div>
+          <div class="skeleton" style="height:56px;width:180px;border-radius:11px;"></div>
+          <div class="skeleton" style="height:56px;width:180px;border-radius:11px;"></div>
+        </div>
+
+        <div class="filter-bar">
+          <div class="filter-chips" id="trilhaFilters" aria-label="Filtrar por banda"></div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <button class="filter-chip is-fav" type="button" id="favFilter" aria-pressed="false">
+              <span aria-hidden="true">★</span> Minha agenda <span class="count" id="favCount">0</span>
+            </button>
+            <button class="filter-chip" type="button" id="clearFilters">Limpar filtros</button>
+          </div>
+        </div>
+
+        <div class="schedule-summary" id="scheduleSummary" aria-live="polite">
+          <span>Carregando horários…</span>
+        </div>
+
+        <div class="schedule" id="scheduleList" aria-live="polite">
+          <div class="skeleton" style="height:120px;border-radius:18px;"></div>
+          <div class="skeleton" style="height:120px;border-radius:18px;"></div>
+          <div class="skeleton" style="height:120px;border-radius:18px;"></div>
+        </div>
+
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:26px;" aria-label="Legenda de tipos de atração">
+          <span class="badge type-portoes">Portões</span>
+          <span class="badge type-feira">Feira</span>
+          <span class="badge type-show">Show</span>
+          <span class="badge type-show-principal">Headliner</span>
+          <span class="badge type-meet-greet">Meet &amp; Greet</span>
+          <span class="badge type-dj">DJ</span>
+          <span class="badge type-cerimonia">Cerimônia</span>
+          <span class="badge type-afterparty">Afterparty</span>
+          <span class="badge type-intervalo">Intervalo</span>
+          <span class="badge type-encerramento">Encerramento</span>
+        </div>
+
+        <div class="info-banner" style="margin-top:24px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8v.01"/></svg>
+          <div>
+            <strong>Meet &amp; greet e feira têm vagas limitadas.</strong>
+            A senha é retirada na recepção do Palco 2, 30 minutos antes de cada sessão.
+            Favoritar uma atração não garante a vaga — chegue cedo.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-sm">
+      <div class="container">
+        <div class="cta-band reveal">
+          <div>
+            <span class="eyebrow">Sua agenda começa aqui</span>
+            <h2 style="margin-top:14px;">Escolha seus shows.<br>A gente cuida do barulho.</h2>
+            <p>O ingresso dá acesso aos três dias. Os favoritos ficam salvos neste navegador para você consultar quando quiser.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-primary btn-lg" href="inscricoes.html">Garantir ingresso</a>
+            <a class="btn btn-ghost" href="local.html">Ver mapa do galpão</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Ratos de Porão — 45 Anos de Barulho — página inicial">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 1 4 13.5h5.4L8 23l9-13.2h-5.4z"/></svg>
+        </span>
+        <span class="brand-text"><strong>Ratos de Porão</strong><small>45 ANOS DE BARULHO</small></span>
+      </a>
+          <p>45 anos de barulho em três noites de punk e thrash no Galpão do Barulho. Um festival fictício criado como projeto acadêmico de Desenvolvimento Web.</p>
+          <div class="footer-contact">
+            <a href="mailto:barulho@45anosderatos.dev.br">barulho@45anosderatos.dev.br</a><br>
+            São Paulo · SP · 04 a 06 de dezembro de 2026
+          </div>
+          <div class="social-links">
+            <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+            <a href="https://youtube.com/" target="_blank" rel="noopener" aria-label="YouTube"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3z" fill="currentColor" stroke="none"/></svg></a>
+            <a href="https://open.spotify.com/" target="_blank" rel="noopener" aria-label="Spotify"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M7.5 9.5c3-.8 6.2-.5 8.8 1M8 12.6c2.5-.6 5.1-.3 7.2.9M8.6 15.6c2-.5 4.1-.2 5.8.8"/></svg></a>
+            <a href="https://bandcamp.com/" target="_blank" rel="noopener" aria-label="Bandcamp"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l10-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="16" cy="16" r="3"/></svg></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Festival</h4>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="trilhas.html">Line-up</a></li>
+            <li><a href="programacao.html">Horários</a></li>
+            <li><a href="local.html">Local e estrutura</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Participe</h4>
+          <ul>
+            <li><a href="inscricoes.html">Ingressos e lotes</a></li>
+            <li><a href="inscricoes.html#faq">Perguntas frequentes</a></li>
+            <li><a href="quem-somos.html">Produção</a></li>
+            <li><a href="checkout.html">Checkout simulado</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <ul>
+            <li><a href="mailto:barulho@45anosderatos.dev.br">barulho@45anosderatos.dev.br</a></li>
+            <li><a href="mailto:imprensa@45anosderatos.dev.br">imprensa@45anosderatos.dev.br</a></li>
+            <li><a href="tel:+551119812026">+55 11 1981-2026</a></li>
+            <li><a href="quem-somos.html">Projeto acadêmico</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="disclaimer-bar">
+        <strong>Evento fictício.</strong> Ratos de Porão — 45 Anos de Barulho é um festival imaginário criado para um trabalho acadêmico de Desenvolvimento Web. Não há venda real de ingressos e este portal não tem vínculo com a banda, seus integrantes ou representantes.
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Ratos de Porão · 45 Anos de Barulho. Projeto acadêmico de Desenvolvimento Web.</span>
+        <span class="footer-tech"><span class="status-dot" aria-hidden="true"></span> Servidor local · porta 2000 <span class="dot-sep">/</span> Node.js + API REST</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

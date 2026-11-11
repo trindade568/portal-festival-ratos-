@@ -1,0 +1,16 @@
+# Dependências (o projeto não usa, mas por garantia)
+node_modules/
+
+# Logs e arquivos temporários de gravação atômica do servidor
+*.log
+*.tmp
+data/*.tmp
+
+# Sistema operacional / editores
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Ambiente
+.env
+.env.*

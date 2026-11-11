@@ -1,0 +1,249 @@
+{
+  "nome": "Galpão do Barulho",
+  "apresentacao": "Um galpão industrial de 9.400 m² na Barra Funda, adaptado para receber três noites de punk e thrash com conforto suficiente para ninguém precisar ir embora cedo. São dois palcos internos, um palco externo, feira de vinil e merch, estúdio de tattoo, food trucks, bar e uma área de acampamento para quem vem de fora.",
+  "endereco": "Rua do Estampido, 1981 — Barra Funda",
+  "cidade": "São Paulo · SP",
+  "cep": "01152-000",
+  "area": "9.400 m²",
+  "capacidade": "6.000 pessoas",
+  "horarios": [
+    { "dia": "04/12 · sexta", "abertura": "16:00", "fechamento": "03:00" },
+    { "dia": "05/12 · sábado", "abertura": "15:00", "fechamento": "03:00" },
+    { "dia": "06/12 · domingo", "abertura": "15:00", "fechamento": "03:20" }
+  ],
+  "palcos": [
+    {
+      "nome": "Palco Principal",
+      "capacidade": 4000,
+      "cor": "#ff2e3f",
+      "descricao": "O palco principal do galpão, com 4.000 lugares de pista, line array de 48 caixas e um telão de LED de 18 metros. Recebe o Ratos de Porão nas três noites e as atrações de maior público.",
+      "recursos": ["Line array 48 caixas", "Telão de LED 18m", "Tradução em Libras", "Área PCD com visão"]
+    },
+    {
+      "nome": "Palco 2 · Subsolo",
+      "capacidade": 1200,
+      "cor": "#f2e205",
+      "descricao": "Palco interno com clima de porão de verdade: teto baixo, paredes de concreto e som direto. Ideal para hardcore, post-punk e stoner em sets mais longos.",
+      "recursos": ["Som direto", "Teto baixo", "Pista colada no palco", "Bar a 10 metros"]
+    },
+    {
+      "nome": "Palco 3 · Ruído",
+      "capacidade": 700,
+      "cor": "#ff6b35",
+      "descricao": "Espaço em formato de arena para bandas de thrash, crossover e Oi!, com pista circular e mosh pit sinalizado.",
+      "recursos": ["Pista circular", "Mosh pit sinalizado", "Acessível por rampa", "Água gratuita"]
+    },
+    {
+      "nome": "Arena Externa",
+      "capacidade": 900,
+      "cor": "#b8d96a",
+      "descricao": "Área ao ar livre com palco secundário para DJs, jams e apresentações surpresa entre os sets principais.",
+      "recursos": ["Palco externo", "DJ booth", "Cobertura parcial", "Food trucks ao lado"]
+    },
+    {
+      "nome": "Bar do Gordo",
+      "capacidade": 300,
+      "cor": "#9fb4c7",
+      "descricao": "Bar principal do galpão, com 40 torneiras de chope artesanal, drinks clássicos e uma parede inteira de pôsteres históricos do RDP.",
+      "recursos": ["40 torneiras", "Drinks clássicos", "Parede de pôsteres", "Área sentada"]
+    }
+  ],
+  "setores": [
+    {
+      "icone": "🎟️",
+      "nome": "Portões e credenciamento",
+      "descricao": "Entrada principal, conferência de ingressos, retirada de credenciais e guarda-volumes gratuito."
+    },
+    {
+      "icone": "💿",
+      "nome": "Vinil & Merch",
+      "descricao": "Selos independentes, prensagens raras, camisetas, bottons e pôsteres das seis bandas do line-up."
+    },
+    {
+      "icone": "🪡",
+      "nome": "Tattoo & Corte",
+      "descricao": "Estúdio de tattoo com flash tattoos do festival e cadeira de corte funcionando durante as três noites."
+    },
+    {
+      "icone": "🍔",
+      "nome": "Food trucks",
+      "descricao": "Oito food trucks com opções vegetarianas, veganas e sem glúten, abertos do início ao fim de cada noite."
+    },
+    {
+      "icone": "🍺",
+      "nome": "Bar do Gordo",
+      "descricao": "Chope artesanal, drinks e água gratuita. O ponto de encontro entre um show e outro."
+    },
+    {
+      "icone": "⛺",
+      "nome": "Acampamento",
+      "descricao": "Área externa para quem vem de fora, com banheiros, chuveiros e segurança 24h durante o festival."
+    },
+    {
+      "icone": "🤝",
+      "nome": "Meet & Greet",
+      "descricao": "Espaço de encontro com as bandas, com sessões de autógrafos e fotos após os shows principais."
+    },
+    {
+      "icone": "♿",
+      "nome": "Acessibilidade e apoio",
+      "descricao": "Equipe de apoio, área PCD com visão privilegiada, empréstimo de protetor auricular e espaço sensorial."
+    }
+  ],
+  "comoChegar": [
+    {
+      "icone": "🚇",
+      "titulo": "Metrô e trem",
+      "texto": "Estação Palmeiras–Barra Funda (Linhas 3 Vermelha e 8 Diamante), a 12 minutos a pé do galpão. Saída pela Rua do Estampido."
+    },
+    {
+      "icone": "🚌",
+      "titulo": "Ônibus",
+      "texto": "Linhas 8615-10, 875A-10 e 978J-10 com parada na Rua do Estampido, a 200 metros da entrada principal."
+    },
+    {
+      "icone": "🚗",
+      "titulo": "Carro e aplicativo",
+      "texto": "Acesso pela Rua do Estampido, 1981. Estacionamento conveniado com 800 vagas (R$ 40/noite) e área de embarque/desembarque sinalizada."
+    },
+    {
+      "icone": "🚴",
+      "titulo": "Bicicleta",
+      "texto": "Bicicletário gratuito com 250 vagas, vestiários e estação de reparo. Estação de bike compartilhada a 150 metros."
+    },
+    {
+      "icone": "🚐",
+      "titulo": "Transfer oficial",
+      "texto": "Vans gratuitas saindo da estação Barra Funda a cada 20 minutos, das 15h à 01h, durante os três dias."
+    }
+  ],
+  "acessibilidade": [
+    "Área PCD com visão privilegiada do Palco Principal e acompanhante gratuito",
+    "Rampas de acesso em todos os palcos e corredores com piso antiderrapante",
+    "Tradução em Libras nas falas oficiais e nos shows do Palco Principal",
+    "Empréstimo gratuito de protetor auricular e abafadores infantis",
+    "Espaço sensorial com baixa estimulação e isolamento acústico",
+    "Banheiros acessíveis em todos os setores do galpão",
+    "Equipe de apoio especializada durante todo o festival",
+    "Cardápio em braile e atendimento prioritário nos bares e food trucks"
+  ],
+  "servicos": [
+    { "icone": "💧", "nome": "Água gratuita", "texto": "Bebedouros em todos os setores e distribuição de água na pista durante os shows." },
+    { "icone": "🎧", "nome": "Protetor auricular", "texto": "Empréstimo gratuito e venda de protetores de alta atenuação na entrada." },
+    { "icone": "🎒", "nome": "Guarda-volumes", "texto": "Gratuito, no foyer, com capacidade para 600 volumes e identificação por QR Code." },
+    { "icone": "🩺", "nome": "Posto médico", "texto": "Atendimento de primeiros socorros e ambulância de plantão durante todas as noites." },
+    { "icone": "💳", "nome": "Cashless", "texto": "Pulseira recarregável para bares, food trucks e merch. Recarga por PIX ou cartão." },
+    { "icone": "📱", "nome": "Wi-Fi e recarga", "texto": "Wi-Fi gratuito nos lounges e tomadas para recarga de celular nos pontos de descanso." }
+  ],
+  "mapa": {
+    "legenda": [
+      { "cor": "#ff2e3f", "nome": "Palcos" },
+      { "cor": "#f2e205", "nome": "Vinil, tattoo e merch" },
+      { "cor": "#ff6b35", "nome": "Food trucks e bar" },
+      { "cor": "#b8d96a", "nome": "Meet & Greet e acampamento" },
+      { "cor": "#9fb4c7", "nome": "Portões e apoio" }
+    ],
+    "observacao": "O mapa é interativo: clique em um setor para ver detalhes, capacidade e recursos.",
+    "zonas": [
+      {
+        "id": "orion",
+        "nome": "Palco Principal",
+        "tipo": "Palco principal",
+        "capacidade": "4.000 lugares",
+        "cor": "#ff2e3f",
+        "descricao": "O coração do festival. Palco principal com 4.000 lugares de pista, line array de 48 caixas e telão de LED de 18 metros. Recebe o Ratos de Porão nas três noites.",
+        "recursos": ["Line array 48 caixas", "Telão de LED", "Área PCD", "Tradução em Libras"]
+      },
+      {
+        "id": "nebula",
+        "nome": "Palco 2 · Subsolo",
+        "tipo": "Palco interno",
+        "capacidade": "1.200 lugares",
+        "cor": "#f2e205",
+        "descricao": "Clima de porão de verdade: teto baixo, concreto aparente e som direto. Hardcore, post-punk e stoner em sets mais longos.",
+        "recursos": ["Som direto", "Teto baixo", "Pista colada", "Bar próximo"]
+      },
+      {
+        "id": "pulsar",
+        "nome": "Palco 3 · Ruído",
+        "tipo": "Arena de shows",
+        "capacidade": "700 lugares",
+        "cor": "#ff6b35",
+        "descricao": "Arena circular para thrash, crossover e Oi!, com mosh pit sinalizado e visão livre do palco em qualquer ponto.",
+        "recursos": ["Pista circular", "Mosh pit sinalizado", "Acessível por rampa", "Água gratuita"]
+      },
+      {
+        "id": "lab1",
+        "nome": "Vinil & Merch",
+        "tipo": "Feira de discos",
+        "capacidade": "40 estandes",
+        "cor": "#f2e205",
+        "descricao": "Selos independentes, prensagens raras, camisetas, bottons e pôsteres das seis bandas do line-up.",
+        "recursos": ["40 estandes", "Prensagens raras", "Camisetas", "Pôsteres"]
+      },
+      {
+        "id": "lab2",
+        "nome": "Tattoo & Corte",
+        "tipo": "Estúdio aberto",
+        "capacidade": "12 cadeiras",
+        "cor": "#e0cf1a",
+        "descricao": "Flash tattoos do festival, piercing e cadeira de corte funcionando durante as três noites. Atendimento por ordem de chegada.",
+        "recursos": ["Flash tattoos", "Piercing", "Corte de cabelo", "Higienização"]
+      },
+      {
+        "id": "feira",
+        "nome": "Food Trucks",
+        "tipo": "Gastronomia",
+        "capacidade": "800 lugares",
+        "cor": "#ff6b35",
+        "descricao": "Oito food trucks com opções vegetarianas, veganas e sem glúten, além de mesas compartilhadas e área externa.",
+        "recursos": ["8 food trucks", "Opções veganas", "Sem glúten", "Área externa"]
+      },
+      {
+        "id": "carreiras",
+        "nome": "Meet & Greet",
+        "tipo": "Encontro com as bandas",
+        "capacidade": "100 pessoas",
+        "cor": "#b8d96a",
+        "descricao": "Espaço de autógrafos e fotos com as bandas após os shows principais. Sessões com vagas limitadas e fila organizada.",
+        "recursos": ["Autógrafos", "Fotos", "Sessões limitadas", "Acesso prioritário"]
+      },
+      {
+        "id": "alimentacao",
+        "nome": "Bar do Gordo",
+        "tipo": "Bar principal",
+        "capacidade": "300 lugares",
+        "cor": "#9fb4c7",
+        "descricao": "Quarenta torneiras de chope artesanal, drinks clássicos e uma parede de pôsteres históricos do RDP. Água gratuita em todos os pontos.",
+        "recursos": ["40 torneiras", "Drinks clássicos", "Água gratuita", "Área sentada"]
+      },
+      {
+        "id": "lounge",
+        "nome": "Lounge & Afterparty",
+        "tipo": "Descanso e festa",
+        "capacidade": "400 lugares",
+        "cor": "#8fb23f",
+        "descricao": "Área para recarregar entre os shows, com sofás, tomadas e o DJ set do afterparty até o fechamento do galpão.",
+        "recursos": ["Sofás e pufes", "Tomadas", "DJ set", "Wi-Fi"]
+      },
+      {
+        "id": "hackathon",
+        "nome": "Acampamento",
+        "tipo": "Área externa 24h",
+        "capacidade": "300 pessoas",
+        "cor": "#b8d96a",
+        "descricao": "Área para quem vem de fora, com banheiros, chuveiros, segurança 24h e regras de convivência afixadas na entrada.",
+        "recursos": ["Aberto 24h", "Chuveiros", "Segurança", "Regras afixadas"]
+      },
+      {
+        "id": "foyer",
+        "nome": "Portões",
+        "tipo": "Entrada principal",
+        "capacidade": "Acesso geral",
+        "cor": "#9fb4c7",
+        "descricao": "Entrada principal do galpão, com conferência de ingressos, retirada de credenciais, guarda-volumes e atendimento ao público.",
+        "recursos": ["Credenciamento", "Guarda-volumes", "Atendimento", "Acesso acessível"]
+      }
+    ]
+  }
+}

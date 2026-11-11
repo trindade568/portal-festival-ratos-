@@ -1,0 +1,15 @@
+{
+  "name": "ratos-de-porao-45-anos",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Ratos de Porão — 45 Anos de Barulho. Portal fictício do festival (projeto acadêmico de Desenvolvimento Web): frontend + backend integrados, porta 2000.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "avatares": "node tools/gerar-avatares.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

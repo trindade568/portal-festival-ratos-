@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08070a">
+  <title>Local & estrutura — Ratos de Porão · 45 Anos de Barulho</title>
+  <meta name="description" content="Conheça o Galpão do Barulho: mapa interativo, três palcos, feira de vinil e merch, estúdio de tattoo, food trucks, acessibilidade e como chegar.">
+  <link rel="icon" href="assets/favicon.svg?v=rdp45" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css?v=rdp45">
+  <script src="js/app.js?v=rdp45" defer></script>
+  <script src="js/local.js?v=rdp45" defer></script>
+</head>
+<body data-page="local">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Ratos de Porão — 45 Anos de Barulho — página inicial">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 1 4 13.5h5.4L8 23l9-13.2h-5.4z"/></svg>
+        </span>
+        <span class="brand-text"><strong>Ratos de Porão</strong><small>45 ANOS DE BARULHO</small></span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
+        <a href="index.html" data-nav="home">Início</a>
+        <a href="trilhas.html" data-nav="trilhas">Line-up</a>
+        <a href="programacao.html" data-nav="programacao">Horários</a>
+        <a href="local.html" data-nav="local">Local</a>
+        <a href="inscricoes.html" data-nav="inscricoes">Ingressos</a>
+        <a href="quem-somos.html" data-nav="quem-somos">Produção</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-primary btn-sm" href="inscricoes.html">Garantir ingresso</a>
+        <button class="nav-toggle" type="button" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="mainNav"><span aria-hidden="true"></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Você está aqui">
+          <a href="index.html">Início</a><span aria-hidden="true">/</span><span aria-current="page">Local &amp; estrutura</span>
+        </nav>
+        <span class="eyebrow">Galpão do Barulho · Barra Funda, São Paulo</span>
+        <h1>Um galpão inteiro<br><span class="gradient-text">tomado pelo barulho.</span></h1>
+        <p class="lead">
+          Três palcos, feira de vinil e merch, estúdio de tattoo, food trucks, bar e área de acampamento.
+          Explore o mapa, descubra cada setor e planeje o seu caminho entre os shows.
+        </p>
+        <div class="page-hero-meta">
+          <span class="pill"><span class="dot" aria-hidden="true"></span> 9.400 m²</span>
+          <span class="pill">6.000 pessoas</span>
+          <span class="pill">3 palcos</span>
+          <span class="pill">Acessibilidade completa</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-sm" style="padding-top:8px;">
+      <div class="container">
+        <div class="local-meta-grid" id="localMeta" aria-live="polite">
+          <div class="skeleton" style="height:74px;border-radius:14px;"></div>
+          <div class="skeleton" style="height:74px;border-radius:14px;"></div>
+          <div class="skeleton" style="height:74px;border-radius:14px;"></div>
+          <div class="skeleton" style="height:74px;border-radius:14px;"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0;">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">Mapa interativo</span>
+            <h2>Explore o Galpão do Barulho</h2>
+            <p>Clique em um setor do mapa para ver a descrição, a capacidade e os recursos disponíveis. Você também pode navegar pelo teclado usando Tab e Enter.</p>
+          </div>
+          <a class="link-arrow" href="#palcos">Ver palcos e estrutura <span aria-hidden="true">→</span></a>
+        </div>
+
+        <div class="map-layout">
+          <div class="map-card">
+            <div class="map-head">
+              <h3>Planta do galpão · piso térreo</h3>
+              <div class="legend" id="mapLegend" aria-label="Legenda do mapa"></div>
+            </div>
+            <svg class="venue-map" id="venueMap" viewBox="0 0 900 580" role="group" aria-label="Mapa interativo dos setores do festival">
+              <rect width="900" height="580" fill="url(#mapGrid)" aria-hidden="true"></rect>
+            </svg>
+            <p class="form-note" id="mapNote" style="margin-top:12px;">O mapa é interativo: selecione um setor para ver os detalhes.</p>
+          </div>
+
+          <aside style="display:flex;flex-direction:column;gap:16px;" aria-label="Detalhes do setor e horários">
+            <div class="zone-detail" id="zoneDetail" aria-live="polite">
+              <div class="skeleton" style="height:46px;width:46px;border-radius:12px;"></div>
+              <div class="skeleton" style="height:22px;width:60%;margin-top:18px;"></div>
+              <div class="skeleton" style="height:14px;width:40%;margin-top:12px;"></div>
+              <div class="skeleton" style="height:80px;margin-top:20px;"></div>
+            </div>
+
+            <div class="summary-card" style="position:static;" aria-label="Horários de funcionamento">
+              <h3>Horários de funcionamento</h3>
+              <div id="horariosList">
+                <div class="skeleton" style="height:14px;margin-top:10px;"></div>
+                <div class="skeleton" style="height:14px;margin-top:12px;"></div>
+                <div class="skeleton" style="height:14px;margin-top:12px;"></div>
+              </div>
+              <p class="summary-note">Os portões abrem 30 minutos antes do primeiro show de cada dia.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="palcos">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">Palcos e estrutura</span>
+            <h2>Onde o barulho acontece</h2>
+            <p>Cada palco foi montado para um tipo de show — do headliner de 4.000 pessoas ao thrash de subsolo.</p>
+          </div>
+        </div>
+        <div class="grid-2" id="palcosGrid" aria-live="polite">
+          <div class="skeleton" style="height:210px;border-radius:18px;"></div>
+          <div class="skeleton" style="height:210px;border-radius:18px;"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">Setores e experiências</span>
+            <h2>Muito além dos shows</h2>
+            <p>Espaços para comprar vinil, fazer tattoo, comer, descansar e continuar a noite depois do último acorde.</p>
+          </div>
+        </div>
+        <div class="grid-3" id="setoresGrid" aria-live="polite">
+          <div class="skeleton" style="height:150px;border-radius:18px;"></div>
+          <div class="skeleton" style="height:150px;border-radius:18px;"></div>
+          <div class="skeleton" style="height:150px;border-radius:18px;"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">Como chegar</span>
+            <h2>Barra Funda, sem estresse</h2>
+            <p>O galpão fica a 12 minutos a pé da estação Palmeiras–Barra Funda, com opções de transporte para todos os perfis.</p>
+          </div>
+        </div>
+        <div class="grid-2" id="comoChegarGrid" aria-live="polite">
+          <div class="skeleton" style="height:120px;border-radius:18px;"></div>
+          <div class="skeleton" style="height:120px;border-radius:18px;"></div>
+        </div>
+
+        <div class="info-banner" style="margin-top:24px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8v.01"/></svg>
+          <div>
+            <strong>Transfer oficial gratuito.</strong> Vans saem do metrô Palmeiras–Barra Funda a cada 15 minutos,
+            das 15h às 03h, durante os três dias do festival. O embarque fica na saída B, com sinalização do 45 Anos de Barulho.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="acessibilidade">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">Acessibilidade</span>
+            <h2>Um festival para todo mundo</h2>
+            <p>Recursos de acessibilidade planejados desde o primeiro dia. Precisa de algum apoio específico? Fale com a produção antes do evento.</p>
+          </div>
+          <a class="link-arrow" href="mailto:barulho@45anosderatos.dev.br">Falar com a produção <span aria-hidden="true">→</span></a>
+        </div>
+
+        <div class="grid-2" style="align-items:start;">
+          <div class="info-card reveal">
+            <div class="ic-icon" aria-hidden="true">♿</div>
+            <h4>Central de acessibilidade</h4>
+            <p style="margin-bottom:16px;">Localizada no foyer, oferece apoio especializado, empréstimo de equipamentos e acompanhamento para o público com deficiência durante todo o festival.</p>
+            <a class="btn btn-ghost btn-sm" href="mailto:barulho@45anosderatos.dev.br">Solicitar apoio</a>
+          </div>
+          <ul class="check-list reveal" id="acessibilidadeList" aria-live="polite"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">Serviços</span>
+            <h2>Você não vai precisar sair do galpão</h2>
+            <p>Água, comida, caixa eletrônico, atendimento médico e descanso para aguentar as três noites.</p>
+          </div>
+        </div>
+        <div class="grid-3" id="servicosGrid" aria-live="polite">
+          <div class="skeleton" style="height:130px;border-radius:18px;"></div>
+          <div class="skeleton" style="height:130px;border-radius:18px;"></div>
+          <div class="skeleton" style="height:130px;border-radius:18px;"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-sm">
+      <div class="container">
+        <div class="cta-band reveal">
+          <div>
+            <span class="eyebrow">Tudo pronto para receber você</span>
+            <h2 style="margin-top:14px;">Conheça o galpão.<br>Depois, garanta seu lugar.</h2>
+            <p>O ingresso dá acesso a todos os palcos, à feira de vinil e merch, ao estúdio de tattoo e às áreas de convivência.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-primary btn-lg" href="inscricoes.html">Ver ingressos</a>
+            <a class="btn btn-ghost" href="programacao.html">Ver horários</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Ratos de Porão — 45 Anos de Barulho — página inicial">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 1 4 13.5h5.4L8 23l9-13.2h-5.4z"/></svg>
+        </span>
+        <span class="brand-text"><strong>Ratos de Porão</strong><small>45 ANOS DE BARULHO</small></span>
+      </a>
+          <p>45 anos de barulho em três noites de punk e thrash no Galpão do Barulho. Um festival fictício criado como projeto acadêmico de Desenvolvimento Web.</p>
+          <div class="footer-contact">
+            <a href="mailto:barulho@45anosderatos.dev.br">barulho@45anosderatos.dev.br</a><br>
+            São Paulo · SP · 04 a 06 de dezembro de 2026
+          </div>
+          <div class="social-links">
+            <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+            <a href="https://youtube.com/" target="_blank" rel="noopener" aria-label="YouTube"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3z" fill="currentColor" stroke="none"/></svg></a>
+            <a href="https://open.spotify.com/" target="_blank" rel="noopener" aria-label="Spotify"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M7.5 9.5c3-.8 6.2-.5 8.8 1M8 12.6c2.5-.6 5.1-.3 7.2.9M8.6 15.6c2-.5 4.1-.2 5.8.8"/></svg></a>
+            <a href="https://bandcamp.com/" target="_blank" rel="noopener" aria-label="Bandcamp"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l10-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="16" cy="16" r="3"/></svg></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Festival</h4>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="trilhas.html">Line-up</a></li>
+            <li><a href="programacao.html">Horários</a></li>
+            <li><a href="local.html">Local e estrutura</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Participe</h4>
+          <ul>
+            <li><a href="inscricoes.html">Ingressos e lotes</a></li>
+            <li><a href="inscricoes.html#faq">Perguntas frequentes</a></li>
+            <li><a href="quem-somos.html">Produção</a></li>
+            <li><a href="checkout.html">Checkout simulado</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <ul>
+            <li><a href="mailto:barulho@45anosderatos.dev.br">barulho@45anosderatos.dev.br</a></li>
+            <li><a href="mailto:imprensa@45anosderatos.dev.br">imprensa@45anosderatos.dev.br</a></li>
+            <li><a href="tel:+551119812026">+55 11 1981-2026</a></li>
+            <li><a href="quem-somos.html">Projeto acadêmico</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="disclaimer-bar">
+        <strong>Evento fictício.</strong> Ratos de Porão — 45 Anos de Barulho é um festival imaginário criado para um trabalho acadêmico de Desenvolvimento Web. Não há venda real de ingressos e este portal não tem vínculo com a banda, seus integrantes ou representantes.
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Ratos de Porão · 45 Anos de Barulho. Projeto acadêmico de Desenvolvimento Web.</span>
+        <span class="footer-tech"><span class="status-dot" aria-hidden="true"></span> Servidor local · porta 2000 <span class="dot-sep">/</span> Node.js + API REST</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

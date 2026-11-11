@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Ilustração de Felipe Andrade Moreira">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#26100a"/>
+      <stop offset="1" stop-color="#8a1420"/>
+    </linearGradient>
+    <linearGradient id="shirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff2e3f"/>
+      <stop offset="1" stop-color="#26100a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="38%" r="60%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="clip"><rect width="400" height="400"/></clipPath>
+  </defs>
+  <g clip-path="url(#clip)">
+    <rect width="400" height="400" fill="url(#bg)"/>
+    <circle cx="330" cy="76" r="128" fill="#ffffff" opacity=".06"/>
+    <circle cx="62" cy="340" r="104" fill="#ffffff" opacity=".05"/>
+    <circle cx="200" cy="188" r="150" fill="none" stroke="#ffffff" stroke-opacity=".08" stroke-width="1.5"/>
+    <circle cx="200" cy="188" r="118" fill="none" stroke="#ffffff" stroke-opacity=".06" stroke-width="1.5"/>
+    <rect width="400" height="400" fill="url(#glow)"/>
+    
+      <path d="M114 190 C108 94 148 72 200 72 C252 72 292 94 286 190 L284 262 C266 278 250 262 248 226 L152 226 C150 262 134 278 116 262 Z" fill="#3f2a1d"/>
+      <path d="M124 180 C118 226 120 252 114 272 C134 276 146 256 146 232 L146 196 Z" fill="#3f2a1d"/>
+      <path d="M276 180 C282 226 280 252 286 272 C266 276 254 256 254 232 L254 196 Z" fill="#3f2a1d"/>
+    
+    <path d="M52 400 C52 316 112 284 200 284 C288 284 348 316 348 400 Z" fill="url(#shirt)"/>
+    <path d="M156 296 L200 336 L244 296 L228 288 L200 314 L172 288 Z" fill="#ffffff" opacity=".16"/>
+    <path d="M164 252 h72 v42 c0 20 -72 20 -72 0 z" fill="#f2c9a5"/>
+    <path d="M164 252 h72 v20 c-24 10 -48 10 -72 0 z" fill="rgba(0,0,0,.12)"/>
+    <ellipse cx="120" cy="198" rx="14" ry="21" fill="#f2c9a5"/>
+    <ellipse cx="280" cy="198" rx="14" ry="21" fill="#f2c9a5"/>
+    <ellipse cx="200" cy="190" rx="79" ry="89" fill="#f2c9a5"/>
+    <ellipse cx="200" cy="206" rx="79" ry="73" fill="#f2c9a5"/>
+    <circle cx="158" cy="220" r="15" fill="#e8798a" opacity=".14"/>
+    <circle cx="242" cy="220" r="15" fill="#e8798a" opacity=".14"/>
+    
+    <path d="M150 166 q20 -11 38 -2" stroke="#3f2a1d" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <path d="M250 166 q-20 -11 -38 -2" stroke="#3f2a1d" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <ellipse cx="161" cy="193" rx="6" ry="8" fill="#20242e"/>
+    <ellipse cx="239" cy="193" rx="6" ry="8" fill="#20242e"/>
+    <circle cx="163" cy="190" r="2" fill="#ffffff" opacity=".7"/>
+    <circle cx="241" cy="190" r="2" fill="#ffffff" opacity=".7"/>
+    <path d="M199 202 q-7 19 5 21" stroke="rgba(0,0,0,.12)" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M176 238 q24 17 48 0" stroke="#8d4a45" stroke-width="5" fill="none" stroke-linecap="round"/>
+    
+      <path d="M120 176 C116 106 150 84 200 84 C250 84 284 106 280 176 C268 142 244 124 200 124 C156 124 132 142 120 176 Z" fill="#3f2a1d"/>
+      <path d="M200 88 C184 104 176 116 172 128" stroke="#ffffff" stroke-opacity=".13" stroke-width="5" fill="none" stroke-linecap="round"/>
+    
+    <g fill="none" stroke="#111827" stroke-opacity=".78" stroke-width="5">
+         <rect x="138" y="174" width="54" height="40" rx="13"/>
+         <rect x="208" y="174" width="54" height="40" rx="13"/>
+         <path d="M192 192 h16"/>
+         <path d="M138 188 l-16 -4"/>
+         <path d="M262 188 l16 -4"/>
+       </g>
+  </g>
+</svg>

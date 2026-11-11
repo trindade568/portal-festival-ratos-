@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08070a">
+  <title>Checkout simulado — Ratos de Porão · 45 Anos de Barulho</title>
+  <meta name="description" content="Finalize sua compra no checkout simulado com PIX, cartão ou boleto. Nenhuma cobrança real é realizada.">
+  <link rel="icon" href="assets/favicon.svg?v=rdp45" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css?v=rdp45">
+  <script src="js/app.js?v=rdp45" defer></script>
+  <script src="js/checkout.js?v=rdp45" defer></script>
+</head>
+<body data-page="inscricoes">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Ratos de Porão — 45 Anos de Barulho — página inicial">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 1 4 13.5h5.4L8 23l9-13.2h-5.4z"/></svg>
+        </span>
+        <span class="brand-text"><strong>Ratos de Porão</strong><small>45 ANOS DE BARULHO</small></span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
+        <a href="index.html" data-nav="home">Início</a>
+        <a href="trilhas.html" data-nav="trilhas">Line-up</a>
+        <a href="programacao.html" data-nav="programacao">Horários</a>
+        <a href="local.html" data-nav="local">Local</a>
+        <a href="inscricoes.html" data-nav="inscricoes">Ingressos</a>
+        <a href="quem-somos.html" data-nav="quem-somos">Produção</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-primary btn-sm" href="inscricoes.html">Garantir ingresso</a>
+        <button class="nav-toggle" type="button" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="mainNav"><span aria-hidden="true"></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Você está aqui">
+          <a href="index.html">Início</a><span aria-hidden="true">/</span>
+          <a href="inscricoes.html">Ingressos</a><span aria-hidden="true">/</span>
+          <span aria-current="page">Checkout</span>
+        </nav>
+        <span class="eyebrow">Pagamento simulado · ambiente de demonstração</span>
+        <h1>Finalize a sua<br><span class="gradient-text">compra.</span></h1>
+        <p class="lead">
+          Confira o resumo do pedido e escolha como prefere pagar. Este checkout é uma simulação
+          acadêmica: nenhum dado financeiro real é processado ou armazenado.
+        </p>
+      </div>
+    </section>
+
+    <section class="section-sm" style="padding-top:8px;">
+      <div class="container">
+        <div class="checkout-steps" aria-label="Etapas do checkout">
+          <div class="co-step is-done"><i aria-hidden="true">✓</i> Dados pessoais</div>
+          <div class="co-line" aria-hidden="true"></div>
+          <div class="co-step is-active" id="stepPay"><i aria-hidden="true">2</i> Pagamento</div>
+          <div class="co-line" aria-hidden="true"></div>
+          <div class="co-step" id="stepDone"><i aria-hidden="true">3</i> Confirmação</div>
+        </div>
+
+        <div id="checkoutRoot" aria-live="polite">
+          <div class="checkout-grid">
+            <div class="form-card">
+              <form id="checkoutForm" novalidate>
+                <h2 style="font-size:clamp(1.3rem,2.4vw,1.7rem);">Escolha a forma de pagamento</h2>
+                <p class="small muted" style="margin-top:8px;">Selecione uma das opções abaixo. A confirmação é imediata em todas elas.</p>
+
+                <div class="pay-methods" role="tablist" aria-label="Formas de pagamento">
+                  <button class="pay-method is-active" type="button" role="tab" id="tabPix" aria-selected="true" aria-controls="panelPix" data-method="pix">
+                    <span class="pm-icon" aria-hidden="true">⚡</span>
+                    <strong>PIX</strong>
+                    <span>Aprovação imediata</span>
+                  </button>
+                  <button class="pay-method" type="button" role="tab" id="tabCartao" aria-selected="false" aria-controls="panelCartao" data-method="cartao" tabindex="-1">
+                    <span class="pm-icon" aria-hidden="true">💳</span>
+                    <strong>Cartão</strong>
+                    <span>Crédito à vista ou parcelado</span>
+                  </button>
+                  <button class="pay-method" type="button" role="tab" id="tabBoleto" aria-selected="false" aria-controls="panelBoleto" data-method="boleto" tabindex="-1">
+                    <span class="pm-icon" aria-hidden="true">🧾</span>
+                    <strong>Boleto</strong>
+                    <span>Vencimento em 3 dias úteis</span>
+                  </button>
+                </div>
+
+                <div class="pay-panel is-active" id="panelPix" role="tabpanel" aria-labelledby="tabPix">
+                  <div class="pix-box">
+                    <div class="qr" id="pixQr" aria-label="QR Code simulado de pagamento PIX"></div>
+                    <div>
+                      <h3 style="font-size:1.02rem;">Pague com PIX</h3>
+                      <p class="small muted" style="margin-top:6px;">
+                        Escaneie o QR Code no aplicativo do seu banco ou use o código copia e cola.
+                        O pagamento é identificado na hora.
+                      </p>
+                      <div class="pix-code" id="pixCode" aria-label="Código PIX copia e cola"></div>
+                      <div class="pix-actions">
+                        <button class="btn btn-ghost btn-sm" type="button" id="copyPix">Copiar código PIX</button>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="form-note" style="margin-top:14px;">Código gerado apenas para demonstração. Não realize nenhum pagamento real.</p>
+                </div>
+
+                <div class="pay-panel" id="panelCartao" role="tabpanel" aria-labelledby="tabCartao">
+                  <div class="card-form">
+                    <div class="field field-full">
+                      <label for="cardNome">Nome impresso no cartão <span class="req" aria-hidden="true">*</span></label>
+                      <input id="cardNome" name="cardNome" type="text" autocomplete="cc-name" placeholder="COMO ESTÁ NO CARTÃO" maxlength="60">
+                      <span class="error" data-error-for="cardNome"></span>
+                    </div>
+
+                    <div class="field field-full">
+                      <label for="cardNumero">Número do cartão <span class="req" aria-hidden="true">*</span></label>
+                      <input id="cardNumero" name="cardNumero" type="text" inputmode="numeric" autocomplete="cc-number" placeholder="0000 0000 0000 0000" maxlength="19">
+                      <span class="hint" id="cardBrandHint">Aceitamos Visa, Mastercard e Elo (simulação).</span>
+                      <span class="error" data-error-for="cardNumero"></span>
+                    </div>
+
+                    <div class="field">
+                      <label for="cardValidade">Validade <span class="req" aria-hidden="true">*</span></label>
+                      <input id="cardValidade" name="cardValidade" type="text" inputmode="numeric" autocomplete="cc-exp" placeholder="MM/AA" maxlength="5">
+                      <span class="error" data-error-for="cardValidade"></span>
+                    </div>
+
+                    <div class="field">
+                      <label for="cardCvv">Código de segurança <span class="req" aria-hidden="true">*</span></label>
+                      <input id="cardCvv" name="cardCvv" type="text" inputmode="numeric" autocomplete="cc-csc" placeholder="CVV" maxlength="4">
+                      <span class="error" data-error-for="cardCvv"></span>
+                    </div>
+
+                    <div class="field field-full">
+                      <label for="parcelas">Parcelamento</label>
+                      <select id="parcelas" name="parcelas">
+                        <option value="1">1x à vista — sem juros</option>
+                        <option value="2">2x sem juros</option>
+                        <option value="3">3x sem juros</option>
+                        <option value="4">4x sem juros</option>
+                        <option value="6">6x sem juros</option>
+                      </select>
+                      <span class="hint" id="parcelHint">Parcelamento simulado, sem análise de crédito.</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pay-panel" id="panelBoleto" role="tabpanel" aria-labelledby="tabBoleto">
+                  <div class="boleto-box">
+                    <strong>Boleto bancário simulado</strong>
+                    <p style="margin-top:10px;">
+                      Ao confirmar, geramos um boleto de demonstração com vencimento em <strong>3 dias úteis</strong>.
+                      A compra é confirmada automaticamente neste ambiente acadêmico, sem necessidade de pagamento.
+                    </p>
+                    <p style="margin-top:10px;">Linha digitável: <span style="font-family:var(--font-mono);color:var(--text);" id="boletoLinha">—</span></p>
+                    <p style="margin-top:10px;font-size:0.72rem;">Boletos são emitidos apenas para pessoas físicas. Nenhum valor será cobrado.</p>
+                  </div>
+                </div>
+
+                <div class="form-alert" id="checkoutAlert" role="alert"></div>
+
+                <div class="form-actions">
+                  <button class="btn btn-primary btn-lg" type="submit" id="payBtn">
+                    <span id="payBtnLabel">Confirmar compra</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                  </button>
+                  <a class="btn btn-ghost" href="inscricoes.html">Voltar e editar dados</a>
+                </div>
+                <p class="form-note" style="margin-top:14px;">
+                  Ao confirmar, você concorda com o regulamento do festival. Ambiente de demonstração: nenhuma cobrança real será feita.
+                </p>
+              </form>
+
+              <div class="processing" id="processing" aria-live="assertive">
+                <div class="spinner" aria-hidden="true"></div>
+                <h3>Processando sua compra…</h3>
+                <p class="small muted">Validando os dados e gerando seu protocolo. Não feche esta página.</p>
+              </div>
+            </div>
+
+            <aside class="summary-card" id="summaryCard" aria-label="Resumo do pedido">
+              <div class="skeleton" style="height:22px;width:60%;"></div>
+              <div class="skeleton" style="height:14px;margin-top:20px;"></div>
+              <div class="skeleton" style="height:14px;margin-top:12px;"></div>
+              <div class="skeleton" style="height:14px;margin-top:12px;"></div>
+              <div class="skeleton" style="height:46px;margin-top:24px;"></div>
+            </aside>
+          </div>
+        </div>
+
+        <div id="successRoot" hidden></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Ratos de Porão — 45 Anos de Barulho — página inicial">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 1 4 13.5h5.4L8 23l9-13.2h-5.4z"/></svg>
+        </span>
+        <span class="brand-text"><strong>Ratos de Porão</strong><small>45 ANOS DE BARULHO</small></span>
+      </a>
+          <p>45 anos de barulho em três noites de punk e thrash no Galpão do Barulho. Um festival fictício criado como projeto acadêmico de Desenvolvimento Web.</p>
+          <div class="footer-contact">
+            <a href="mailto:barulho@45anosderatos.dev.br">barulho@45anosderatos.dev.br</a><br>
+            São Paulo · SP · 04 a 06 de dezembro de 2026
+          </div>
+          <div class="social-links">
+            <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+            <a href="https://youtube.com/" target="_blank" rel="noopener" aria-label="YouTube"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3z" fill="currentColor" stroke="none"/></svg></a>
+            <a href="https://open.spotify.com/" target="_blank" rel="noopener" aria-label="Spotify"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M7.5 9.5c3-.8 6.2-.5 8.8 1M8 12.6c2.5-.6 5.1-.3 7.2.9M8.6 15.6c2-.5 4.1-.2 5.8.8"/></svg></a>
+            <a href="https://bandcamp.com/" target="_blank" rel="noopener" aria-label="Bandcamp"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l10-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="16" cy="16" r="3"/></svg></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Festival</h4>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="trilhas.html">Line-up</a></li>
+            <li><a href="programacao.html">Horários</a></li>
+            <li><a href="local.html">Local e estrutura</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Participe</h4>
+          <ul>
+            <li><a href="inscricoes.html">Ingressos e lotes</a></li>
+            <li><a href="inscricoes.html#faq">Perguntas frequentes</a></li>
+            <li><a href="quem-somos.html">Produção</a></li>
+            <li><a href="checkout.html">Checkout simulado</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <ul>
+            <li><a href="mailto:barulho@45anosderatos.dev.br">barulho@45anosderatos.dev.br</a></li>
+            <li><a href="mailto:imprensa@45anosderatos.dev.br">imprensa@45anosderatos.dev.br</a></li>
+            <li><a href="tel:+551119812026">+55 11 1981-2026</a></li>
+            <li><a href="quem-somos.html">Projeto acadêmico</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="disclaimer-bar">
+        <strong>Evento fictício.</strong> Ratos de Porão — 45 Anos de Barulho é um festival imaginário criado para um trabalho acadêmico de Desenvolvimento Web. Não há venda real de ingressos e este portal não tem vínculo com a banda, seus integrantes ou representantes.
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Ratos de Porão · 45 Anos de Barulho. Projeto acadêmico de Desenvolvimento Web.</span>
+        <span class="footer-tech"><span class="status-dot" aria-hidden="true"></span> Servidor local · porta 2000 <span class="dot-sep">/</span> Node.js + API REST</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

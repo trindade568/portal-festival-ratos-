@@ -1,0 +1,50 @@
+{
+  "nome": "Ratos de Porão",
+  "edicao": "45 Anos de Barulho",
+  "tagline": "45 anos de barulho. 3 noites de porão.",
+  "chamada": "O festival que celebra quatro décadas e meia de punk e thrash com a banda que nunca pediu licença para existir.",
+  "dataInicio": "2026-12-04T16:00:00-03:00",
+  "dataFim": "2026-12-06T03:20:00-03:00",
+  "dataLabel": "04, 05 e 06 de dezembro de 2026",
+  "local": "Galpão do Barulho",
+  "cidade": "São Paulo · SP",
+  "endereco": "Rua do Estampido, 1981 — Barra Funda, São Paulo/SP",
+  "descricao": "O Ratos de Porão — 45 Anos de Barulho é um festival de três noites em São Paulo para comemorar quatro décadas e meia de uma das bandas mais importantes do punk e do thrash brasileiro. Cada noite tem um álbum clássico do RDP na íntegra, bandas convidadas do underground nacional, DJs entre os shows, feira de vinil e merch, estúdio de tattoo, food trucks e um afterparty que só termina quando o galpão aguentar. É barulho, é suor, é resistência — do jeito que sempre foi.",
+  "numeros": [
+    { "valor": "6.000", "label": "por noite no galpão", "detalhe": "pista, camarote e área externa" },
+    { "valor": "06", "label": "bandas no line-up", "detalhe": "RDP + cinco atrações convidadas" },
+    { "valor": "45", "label": "anos de estrada", "detalhe": "1981–2026, sem pausa para respirar" },
+    { "valor": "3", "label": "álbuns na íntegra", "detalhe": "um clássico por noite" }
+  ],
+  "destaques": [
+    "Ratos de Porão headliner nas três noites, com um álbum clássico na íntegra por noite",
+    "Cinco bandas convidadas do underground: hardcore, thrash, post-punk, stoner e Oi!",
+    "Feira de vinil e merch com selos independentes e prensagens raras",
+    "Estúdio de tattoo e corte de cabelo funcionando durante todo o festival"
+  ],
+  "redes": {
+    "instagram": "https://instagram.com/ratosdeporao",
+    "youtube": "https://youtube.com/@ratosdeporao",
+    "spotify": "https://open.spotify.com/artist/6RatosDePorao",
+    "bandcamp": "https://ratosdeporao.bandcamp.com"
+  },
+  "contato": {
+    "email": "barulho@45anosderatos.dev.br",
+    "imprensa": "imprensa@45anosderatos.dev.br",
+    "telefone": "+55 11 1981-2026"
+  },
+  "patrocinadores": [
+    { "nome": "Selo Podre", "tipo": "Apresenta" },
+    { "nome": "Amplificadores Valvulados", "tipo": "Master" },
+    { "nome": "Cerveja Cova", "tipo": "Master" },
+    { "nome": "Vinil Preto", "tipo": "Ouro" },
+    { "nome": "Toca Discos", "tipo": "Ouro" },
+    { "nome": "Barulho Sound", "tipo": "Ouro" },
+    { "nome": "Rádio Pirata 1981", "tipo": "Prata" },
+    { "nome": "Guitarras Cruas", "tipo": "Prata" },
+    { "nome": "Fita Cassete Records", "tipo": "Prata" },
+    { "nome": "Tatuaria Ferro", "tipo": "Apoio" },
+    { "nome": "Café Coado", "tipo": "Apoio" },
+    { "nome": "Instituto Barulho", "tipo": "Apoio" }
+  ]
+}

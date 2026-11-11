@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08070a">
+  <title>Produção — Ratos de Porão · 45 Anos de Barulho</title>
+  <meta name="description" content="Conheça a equipe de seis integrantes responsável pelo portal do festival 45 Anos de Barulho, um projeto acadêmico de Desenvolvimento Web.">
+  <link rel="icon" href="assets/favicon.svg?v=rdp45" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css?v=rdp45">
+  <script src="js/app.js?v=rdp45" defer></script>
+  <script src="js/quem-somos.js?v=rdp45" defer></script>
+</head>
+<body data-page="quem-somos">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Ratos de Porão — 45 Anos de Barulho — página inicial">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 1 4 13.5h5.4L8 23l9-13.2h-5.4z"/></svg>
+        </span>
+        <span class="brand-text"><strong>Ratos de Porão</strong><small>45 ANOS DE BARULHO</small></span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
+        <a href="index.html" data-nav="home">Início</a>
+        <a href="trilhas.html" data-nav="trilhas">Line-up</a>
+        <a href="programacao.html" data-nav="programacao">Horários</a>
+        <a href="local.html" data-nav="local">Local</a>
+        <a href="inscricoes.html" data-nav="inscricoes">Ingressos</a>
+        <a href="quem-somos.html" data-nav="quem-somos">Produção</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-primary btn-sm" href="inscricoes.html">Garantir ingresso</a>
+        <button class="nav-toggle" type="button" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="mainNav"><span aria-hidden="true"></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Você está aqui">
+          <a href="index.html">Início</a><span aria-hidden="true">/</span><span aria-current="page">Produção</span>
+        </nav>
+        <span class="eyebrow">Projeto acadêmico · Desenvolvimento Web</span>
+        <h1>Seis pessoas,<br><span class="gradient-text">um galpão inteiro.</span></h1>
+        <p class="lead">
+          Somos a equipe de produção por trás do Ratos de Porão — 45 Anos de Barulho. Este portal nasceu como
+          trabalho da disciplina de Desenvolvimento Web e reúne frontend, backend, persistência em arquivo,
+          API REST e acessibilidade em um único projeto feito do zero.
+        </p>
+        <div class="page-hero-meta">
+          <span class="pill"><span class="dot" aria-hidden="true"></span> 6 integrantes</span>
+          <span class="pill">Frontend + backend</span>
+          <span class="pill">Node.js sem dependências</span>
+          <span class="pill">Porta 2000</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:10px;">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">A equipe</span>
+            <h2>Quem construiu este portal</h2>
+            <p>Cada integrante assumiu uma frente da produção, do design system à documentação. Clique nos links para conhecer os perfis.</p>
+          </div>
+        </div>
+
+        <div class="team-grid" id="teamGrid" aria-live="polite">
+          <div class="skeleton" style="height:520px;border-radius:20px;"></div>
+          <div class="skeleton" style="height:520px;border-radius:20px;"></div>
+          <div class="skeleton" style="height:520px;border-radius:20px;"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">Sobre o projeto</span>
+            <h2>Um festival fictício, um produto real</h2>
+            <p>O desafio era criar um portal completo para um evento, com navegação clara, integração entre frontend e backend e execução local em servidor próprio.</p>
+          </div>
+        </div>
+
+        <div class="grid-2" style="align-items:start;">
+          <div class="form-card reveal">
+            <h3 style="font-size:1.2rem;">O desafio</h3>
+            <p class="muted" style="margin-top:12px;font-size:0.88rem;line-height:1.7;">
+              Desenvolver um portal com seis áreas obrigatórias — início, ingressos, line-up, local e estrutura,
+              horários e produção — mantendo identidade visual consistente, responsividade e integração total
+              com uma API própria.
+            </p>
+            <p class="muted" style="margin-top:12px;font-size:0.88rem;line-height:1.7;">
+              Além da interface, era necessário persistir inscrições, validar dados no servidor, calcular a
+              disponibilidade dos lotes em tempo real e simular um fluxo completo de pagamento até a emissão
+              de um protocolo.
+            </p>
+            <ul class="check-list" style="margin-top:18px;">
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Seis páginas navegáveis e responsivas</li>
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> API REST com dados reais do festival</li>
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Checkout simulado com protocolo</li>
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Acessibilidade por teclado e leitores de tela</li>
+            </ul>
+          </div>
+
+          <div class="form-card reveal" style="--d:80ms">
+            <h3 style="font-size:1.2rem;">A solução</h3>
+            <p class="muted" style="margin-top:12px;font-size:0.88rem;line-height:1.7;">
+              Construímos o backend em Node.js puro, usando apenas o módulo <code>http</code>, sem dependências externas.
+              Os dados do festival ficam em arquivos JSON e as inscrições são gravadas com escrita atômica.
+            </p>
+            <p class="muted" style="margin-top:12px;font-size:0.88rem;line-height:1.7;">
+              No frontend, JavaScript vanilla renderiza os componentes a partir da API, com design system próprio,
+              animações de entrada, favoritos na agenda, filtros de horários e mapa interativo em SVG.
+            </p>
+            <div class="chip-list" style="margin-top:18px;">
+              <span class="chip">HTML5</span>
+              <span class="chip">CSS3</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">Node.js</span>
+              <span class="chip">API REST</span>
+              <span class="chip">JSON</span>
+              <span class="chip">SVG</span>
+              <span class="chip">WCAG</span>
+            </div>
+            <div class="info-banner" style="margin-top:18px;padding:12px 14px;font-size:0.74rem;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 3 3 7v5c0 5 4 8.5 9 9 5-.5 9-4 9-9V7z"/><path d="m9 12 2 2 4-4"/></svg>
+              <div><strong>Festival fictício.</strong> Nenhuma cobrança real é feita e o projeto não tem vínculo com a banda Ratos de Porão.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stack-grid" style="margin-top:28px;" aria-label="Tecnologias utilizadas no projeto">
+          <div class="stack-item reveal"><div class="si-icon" aria-hidden="true">🧱</div><strong>HTML5</strong><span>Semântica e acessibilidade</span></div>
+          <div class="stack-item reveal" style="--d:50ms"><div class="si-icon" aria-hidden="true">🎨</div><strong>CSS3</strong><span>Design system e responsividade</span></div>
+          <div class="stack-item reveal" style="--d:100ms"><div class="si-icon" aria-hidden="true">⚡</div><strong>JavaScript</strong><span>Interatividade no navegador</span></div>
+          <div class="stack-item reveal" style="--d:150ms"><div class="si-icon" aria-hidden="true">🟢</div><strong>Node.js</strong><span>Servidor HTTP nativo</span></div>
+          <div class="stack-item reveal" style="--d:200ms"><div class="si-icon" aria-hidden="true">🔌</div><strong>API REST</strong><span>Integração frontend/backend</span></div>
+          <div class="stack-item reveal" style="--d:250ms"><div class="si-icon" aria-hidden="true">🗄️</div><strong>JSON</strong><span>Persistência de dados</span></div>
+          <div class="stack-item reveal" style="--d:300ms"><div class="si-icon" aria-hidden="true">🌿</div><strong>Git</strong><span>Versionamento do código</span></div>
+          <div class="stack-item reveal" style="--d:350ms"><div class="si-icon" aria-hidden="true">♿</div><strong>WCAG</strong><span>Boas práticas de acesso</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">Como foi feito</span>
+            <h2>Da ideia ao servidor na porta 2000</h2>
+            <p>Quatro etapas organizaram o desenvolvimento e garantiram a integração de ponta a ponta.</p>
+          </div>
+        </div>
+        <div class="steps">
+          <article class="step reveal">
+            <h3>Pesquisa e arquitetura</h3>
+            <p>Definimos a identidade, o mapa do site, os dados do festival e o contrato da API antes de escrever a interface.</p>
+          </article>
+          <article class="step reveal" style="--d:70ms">
+            <h3>Design system</h3>
+            <p>Criamos tokens de cor, tipografia, componentes e estados de interação reutilizados em todas as páginas.</p>
+          </article>
+          <article class="step reveal" style="--d:140ms">
+            <h3>Frontend e backend</h3>
+            <p>O servidor Node.js expõe os dados em JSON e o frontend renderiza tudo dinamicamente, com validação nos dois lados.</p>
+          </article>
+          <article class="step reveal" style="--d:210ms">
+            <h3>Testes e documentação</h3>
+            <p>Validamos fluxos, mensagens de erro, responsividade e documentamos a execução local e os endpoints da API.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-sm">
+      <div class="container">
+        <div class="cta-band reveal">
+          <div>
+            <span class="eyebrow">Obrigado por visitar</span>
+            <h2 style="margin-top:14px;">Agora que você nos conhece,<br>venha viver o barulho.</h2>
+            <p>Explore o line-up, monte sua agenda e garanta seu ingresso no checkout simulado. Todo o portal está rodando localmente na porta 2000.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-primary btn-lg" href="inscricoes.html">Garantir ingresso</a>
+            <a class="btn btn-ghost" href="trilhas.html">Ver line-up</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Ratos de Porão — 45 Anos de Barulho — página inicial">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 1 4 13.5h5.4L8 23l9-13.2h-5.4z"/></svg>
+        </span>
+        <span class="brand-text"><strong>Ratos de Porão</strong><small>45 ANOS DE BARULHO</small></span>
+      </a>
+          <p>45 anos de barulho em três noites de punk e thrash no Galpão do Barulho. Um festival fictício criado como projeto acadêmico de Desenvolvimento Web.</p>
+          <div class="footer-contact">
+            <a href="mailto:barulho@45anosderatos.dev.br">barulho@45anosderatos.dev.br</a><br>
+            São Paulo · SP · 04 a 06 de dezembro de 2026
+          </div>
+          <div class="social-links">
+            <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+            <a href="https://youtube.com/" target="_blank" rel="noopener" aria-label="YouTube"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3z" fill="currentColor" stroke="none"/></svg></a>
+            <a href="https://open.spotify.com/" target="_blank" rel="noopener" aria-label="Spotify"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M7.5 9.5c3-.8 6.2-.5 8.8 1M8 12.6c2.5-.6 5.1-.3 7.2.9M8.6 15.6c2-.5 4.1-.2 5.8.8"/></svg></a>
+            <a href="https://bandcamp.com/" target="_blank" rel="noopener" aria-label="Bandcamp"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l10-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="16" cy="16" r="3"/></svg></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Festival</h4>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="trilhas.html">Line-up</a></li>
+            <li><a href="programacao.html">Horários</a></li>
+            <li><a href="local.html">Local e estrutura</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Participe</h4>
+          <ul>
+            <li><a href="inscricoes.html">Ingressos e lotes</a></li>
+            <li><a href="inscricoes.html#faq">Perguntas frequentes</a></li>
+            <li><a href="quem-somos.html">Produção</a></li>
+            <li><a href="checkout.html">Checkout simulado</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <ul>
+            <li><a href="mailto:barulho@45anosderatos.dev.br">barulho@45anosderatos.dev.br</a></li>
+            <li><a href="mailto:imprensa@45anosderatos.dev.br">imprensa@45anosderatos.dev.br</a></li>
+            <li><a href="tel:+551119812026">+55 11 1981-2026</a></li>
+            <li><a href="quem-somos.html">Projeto acadêmico</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="disclaimer-bar">
+        <strong>Evento fictício.</strong> Ratos de Porão — 45 Anos de Barulho é um festival imaginário criado para um trabalho acadêmico de Desenvolvimento Web. Não há venda real de ingressos e este portal não tem vínculo com a banda, seus integrantes ou representantes.
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Ratos de Porão · 45 Anos de Barulho. Projeto acadêmico de Desenvolvimento Web.</span>
+        <span class="footer-tech"><span class="status-dot" aria-hidden="true"></span> Servidor local · porta 2000 <span class="dot-sep">/</span> Node.js + API REST</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,97 @@
+[
+  {
+    "id": "lote-1",
+    "nome": "Pista · Lote 1",
+    "preco": 180,
+    "descricao": "Primeiro lote para quem já garantiu lugar na trincheira. Acesso às três noites.",
+    "periodo": "01/07/2026 a 31/08/2026",
+    "capacidade": 1200,
+    "vendidosBase": 1200,
+    "destaque": false,
+    "beneficios": [
+      "Acesso às três noites do festival",
+      "Copo oficial do 45 Anos de Barulho",
+      "Credencial colecionável numerada"
+    ]
+  },
+  {
+    "id": "lote-2",
+    "nome": "Pista · Lote 2",
+    "preco": 240,
+    "descricao": "O lote mais vendido. Melhor custo-benefício para quem vai às três noites.",
+    "periodo": "01/09/2026 a 30/11/2026",
+    "capacidade": 1800,
+    "vendidosBase": 1465,
+    "destaque": true,
+    "beneficios": [
+      "Acesso às três noites do festival",
+      "Copo oficial do 45 Anos de Barulho",
+      "Credencial colecionável numerada",
+      "Acesso à feira de vinil e merch"
+    ]
+  },
+  {
+    "id": "lote-3",
+    "nome": "Pista · Lote 3",
+    "preco": 320,
+    "descricao": "Ingresso padrão, sujeito à disponibilidade até a véspera do festival.",
+    "periodo": "01/12/2026 a 03/12/2026",
+    "capacidade": 2000,
+    "vendidosBase": 402,
+    "destaque": false,
+    "beneficios": [
+      "Acesso às três noites do festival",
+      "Copo oficial do 45 Anos de Barulho",
+      "Credencial colecionável numerada",
+      "Acesso à feira de vinil e merch"
+    ]
+  },
+  {
+    "id": "meia",
+    "nome": "Meia-entrada · Estudante",
+    "preco": 120,
+    "descricao": "Meia-entrada para estudantes com carteirinha válida, mediante comprovação no credenciamento.",
+    "periodo": "01/09/2026 a 06/12/2026",
+    "capacidade": 800,
+    "vendidosBase": 517,
+    "destaque": false,
+    "beneficios": [
+      "Acesso às três noites do festival",
+      "Copo oficial do 45 Anos de Barulho",
+      "Credencial colecionável numerada",
+      "Obrigatória apresentação da carteirinha no credenciamento"
+    ]
+  },
+  {
+    "id": "camarote",
+    "nome": "Camarote · Vista do Caos",
+    "preco": 680,
+    "descricao": "Mezanino com vista privilegiada do Palco Principal, bar exclusivo e entrada separada.",
+    "periodo": "01/07/2026 a 04/12/2026",
+    "capacidade": 300,
+    "vendidosBase": 231,
+    "destaque": false,
+    "beneficios": [
+      "Acesso às três noites com entrada separada",
+      "Mezanino com vista do Palco Principal",
+      "Bar exclusivo do camarote",
+      "Meet & Greet garantido com o Ratos de Porão",
+      "Copo e credencial edição limitada"
+    ]
+  },
+  {
+    "id": "porta",
+    "nome": "Na porta · Last Call",
+    "preco": 400,
+    "descricao": "Últimos ingressos, vendidos exclusivamente na porta do galpão durante o festival.",
+    "periodo": "04/12/2026 a 06/12/2026",
+    "capacidade": 400,
+    "vendidosBase": 0,
+    "destaque": false,
+    "beneficios": [
+      "Acesso à noite do dia da compra",
+      "Copo oficial do 45 Anos de Barulho",
+      "Sujeito à lotação do galpão"
+    ]
+  }
+]

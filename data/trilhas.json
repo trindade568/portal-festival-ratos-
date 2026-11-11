@@ -1,0 +1,412 @@
+[
+  {
+    "id": "rdp",
+    "slug": "ratos-de-porao",
+    "nome": "Ratos de Porão",
+    "tagline": "45 anos de barulho, suor e resistência",
+    "icone": "🐀",
+    "cor": "#ff2e3f",
+    "corSecundaria": "#f2e205",
+    "nivel": "Headliner · 3 noites",
+    "publico": "Punk, hardcore e thrash. Para quem cresceu com um walkman no bolso e para quem descobriu a banda ontem.",
+    "resumo": "A banda que começou em 1981 numa garagem em São Paulo e nunca pediu licença para existir. Três noites, três álbuns clássicos na íntegra e um encerramento que promete doer no dia seguinte.",
+    "descricao": "Ratos de Porão é uma das bandas mais importantes da história do punk e do thrash brasileiro. Formada em São Paulo em 1981, atravessou ditadura, crises, trocas de formação e mudanças de mercado sem abrir mão do som sujo, direto e político que a definiu. No festival de 45 anos, o grupo sobe ao palco nas três noites com um álbum clássico na íntegra por noite — Crucificados pelo Sistema, Brasil e Necropolítica — além de um encore com os hinos que o público nunca deixa de pedir. É a celebração de uma obra que influenciou gerações e continua empurrando o underground para frente.",
+    "topicos": [
+      "Noite 1 · Crucificados pelo Sistema (1984) na íntegra",
+      "Noite 2 · Brasil (1989) na íntegra",
+      "Noite 3 · Necropolítica (2014) na íntegra",
+      "Encore com clássicos de todas as fases",
+      "Participações especiais de convidados históricos",
+      "Bate-papo sobre 45 anos de estrada no Meet & Greet",
+      "Feira de vinil com prensagens raras da banda",
+      "Exposição de pôsteres, camisetas e flyers originais"
+    ],
+    "destaques": [
+      "Três álbuns clássicos executados na íntegra, um por noite",
+      "Encontro com fãs no Meet & Greet após cada apresentação",
+      "Exposição de 45 anos de arte, flyers e prensagens raras"
+    ],
+    "palestrantes": [
+      {
+        "nome": "João Gordo",
+        "cargo": "Voz",
+        "empresa": "Ratos de Porão",
+        "avatar": "assets/equipe/band-joao-gordo.svg",
+        "cor": "#ff2e3f",
+        "tags": ["Voz", "Hardcore", "45 anos de estrada"],
+        "bio": "Voz e mau humor do Ratos de Porão desde o início. Conhecido tanto pelos gritos quanto pelas falas sem filtro, virou uma das figuras mais reconhecíveis do underground brasileiro e nunca teve medo de dizer o que pensa dentro ou fora do palco.",
+        "destaque": true
+      },
+      {
+        "nome": "Jão",
+        "cargo": "Guitarra",
+        "empresa": "Ratos de Porão",
+        "avatar": "assets/equipe/band-jao.svg",
+        "cor": "#ff6b35",
+        "tags": ["Guitarra", "Riff", "Crossover"],
+        "bio": "Guitarrista e um dos pilares do som do RDP. Responsável por riffs que atravessam décadas, construiu com a banda uma identidade que mistura punk, hardcore e thrash sem soar datada.",
+        "destaque": true
+      },
+      {
+        "nome": "Juninho",
+        "cargo": "Baixo",
+        "empresa": "Ratos de Porão",
+        "avatar": "assets/equipe/band-juninho.svg",
+        "cor": "#f2e205",
+        "tags": ["Baixo", "Groove", "Peso"],
+        "bio": "Baixista do Ratos de Porão, sustenta o peso e o balanço que fazem o público se mover mesmo nos momentos mais rápidos. Parte essencial da cozinha que dá corpo ao som da banda.",
+        "destaque": true
+      },
+      {
+        "nome": "Boka",
+        "cargo": "Bateria",
+        "empresa": "Ratos de Porão",
+        "avatar": "assets/equipe/band-boka.svg",
+        "cor": "#9fb4c7",
+        "tags": ["Bateria", "Thrash", "Precisão"],
+        "bio": "Baterista do RDP, imprime velocidade e precisão a um repertório que não perdoa. A batida que transforma cada show em uma descarga de energia do começo ao fim.",
+        "destaque": true
+      }
+    ]
+  },
+  {
+    "id": "hardcore",
+    "slug": "carcaca-urbana",
+    "nome": "Carcaça Urbana",
+    "tagline": "Hardcore paulistano sem freio",
+    "icone": "🏚️",
+    "cor": "#f2e205",
+    "corSecundaria": "#c9b900",
+    "nivel": "Abertura · Noites 1 e 2",
+    "publico": "Hardcore, crust e punk de rua. Para quem gosta de show curto, rápido e sem discurso.",
+    "resumo": "Quatro amigos da zona leste de São Paulo que fazem hardcore cru sobre cidade, trabalho e sobrevivência. Show de 40 minutos, sem pausa e sem enfeite.",
+    "descricao": "Carcaça Urbana nasceu em 2014 numa oficina na Penha e desde então carrega a tradição do hardcore paulistano: som rápido, letras diretas e uma relação de proximidade com o público que dispensa barreira. A banda já rodou o Brasil em turnês independentes e chega ao Galpão do Barulho para duas apresentações — uma no Palco 2 e outra no Palco Principal.",
+    "topicos": [
+      "Setlist de 40 minutos sem intervalo",
+      "Letras sobre cidade, trabalho e sobrevivência",
+      "Público colado no palco, sem barreira",
+      "Camisetas e discos à venda na feira",
+      "Participação especial na noite de abertura",
+      "Versão de clássico do punk nacional no bis",
+      "Meet & Greet com a banda na Noite 1",
+      "Gravação ao vivo de uma faixa inédita"
+    ],
+    "destaques": [
+      "Duas apresentações em palcos diferentes",
+      "Faixa inédita gravada ao vivo durante o festival",
+      "Bate-papo aberto com o público no Meet & Greet"
+    ],
+    "palestrantes": [
+      {
+        "nome": "Dita",
+        "cargo": "Voz",
+        "empresa": "Carcaça Urbana",
+        "avatar": "assets/equipe/band-dita.svg",
+        "cor": "#f2e205",
+        "tags": ["Voz", "Hardcore", "Poesia de rua"],
+        "bio": "Voz e letra da Carcaça Urbana. Cresceu entre a Penha e a Vila Prudente e transforma o dia a dia da periferia em gritos curtos e diretos. Também coordena oficinas de escrita para jovens da zona leste.",
+        "destaque": true
+      },
+      {
+        "nome": "Fumaça",
+        "cargo": "Guitarra",
+        "empresa": "Carcaça Urbana",
+        "avatar": "assets/equipe/band-fumaca.svg",
+        "cor": "#c9b900",
+        "tags": ["Guitarra", "Feedback", "Crust"],
+        "bio": "Guitarrista da banda, especialista em riffs sujos e camadas de feedback. Constrói os próprios pedais e mantém um pequeno estúdio de gravação analógica na zona leste.",
+        "destaque": false
+      },
+      {
+        "nome": "Tico",
+        "cargo": "Baixo e voz de apoio",
+        "empresa": "Carcaça Urbana",
+        "avatar": "assets/equipe/band-tico.svg",
+        "cor": "#e0cf1a",
+        "tags": ["Baixo", "Backing vocal", "Roadie"],
+        "bio": "Baixista e voz de apoio. Também assina a produção dos shows independentes da banda e é o responsável por colocar o som na estrada com uma van que já passou de 400 mil quilômetros.",
+        "destaque": false
+      },
+      {
+        "nome": "Nena",
+        "cargo": "Bateria",
+        "empresa": "Carcaça Urbana",
+        "avatar": "assets/equipe/band-nena.svg",
+        "cor": "#d9c21a",
+        "tags": ["Bateria", "D-beat", "Resistência"],
+        "bio": "Baterista da Carcaça Urbana, referência de D-beat e resistência na cena paulistana. Dá aulas gratuitas de bateria em um coletivo cultural da zona leste.",
+        "destaque": false
+      }
+    ]
+  },
+  {
+    "id": "thrash",
+    "slug": "vomito-nuclear",
+    "nome": "Vômito Nuclear",
+    "tagline": "Thrash, crossover e radiação",
+    "icone": "☢️",
+    "cor": "#ff6b35",
+    "corSecundaria": "#d94f1e",
+    "nivel": "Abertura · Noites 1 e 3",
+    "publico": "Thrash, crossover e metal punk. Para quem quer mosh pit desde a primeira nota.",
+    "resumo": "Thrash rápido, sujo e com letras sobre guerra, veneno e fim do mundo. A banda que transforma qualquer pista em área de risco controlado.",
+    "descricao": "Vômito Nuclear vem de Sorocaba e faz um thrash de crossover que mistura a agressividade do metal com a urgência do punk. Em dez anos de estrada, lançou três álbuns independentes e construiu uma reputação de shows intensos, com mosh pits que começam antes do primeiro refrão. No festival, a banda se apresenta no Palco Principal e no Palco 3.",
+    "topicos": [
+      "Thrash e crossover em alta velocidade",
+      "Letras sobre guerra, veneno e colapso",
+      "Mosh pit desde a primeira nota",
+      "Dois shows em palcos diferentes",
+      "Disco novo à venda na feira de vinil",
+      "Meet & Greet na Noite 3",
+      "Participação na jam de encerramento",
+      "Merch exclusivo do festival"
+    ],
+    "destaques": [
+      "Apresentação no Palco Principal na Noite 1",
+      "Show fechando o Palco 3 na Noite 2",
+      "Participação na jam de encerramento do festival"
+    ],
+    "palestrantes": [
+      {
+        "nome": "Zé Podre",
+        "cargo": "Voz e baixo",
+        "empresa": "Vômito Nuclear",
+        "avatar": "assets/equipe/band-ze-podre.svg",
+        "cor": "#ff6b35",
+        "tags": ["Voz", "Baixo", "Crossover"],
+        "bio": "Voz e baixo do Vômito Nuclear. Escreve sobre o que vê na cidade e não tem paciência para discurso bonito. Também produz os discos da banda em um home studio improvisado.",
+        "destaque": true
+      },
+      {
+        "nome": "Carca",
+        "cargo": "Guitarra",
+        "empresa": "Vômito Nuclear",
+        "avatar": "assets/equipe/band-carca.svg",
+        "cor": "#d94f1e",
+        "tags": ["Guitarra", "Thrash", "Riff"],
+        "bio": "Guitarrista do Vômito Nuclear. Dono de um estilo de riff cortado e veloz, é responsável por boa parte da agressividade sonora da banda.",
+        "destaque": false
+      },
+      {
+        "nome": "Bode",
+        "cargo": "Bateria",
+        "empresa": "Vômito Nuclear",
+        "avatar": "assets/equipe/band-bode.svg",
+        "cor": "#f28a5c",
+        "tags": ["Bateria", "Velocidade", "Metal punk"],
+        "bio": "Baterista da banda, conhecido pela resistência física e pela precisão em tempos extremos. Também toca em um projeto de grindcore paralelo.",
+        "destaque": false
+      }
+    ]
+  },
+  {
+    "id": "postpunk",
+    "slug": "siberia-77",
+    "nome": "Sibéria 77",
+    "tagline": "Post-punk gelado direto de Curitiba",
+    "icone": "❄️",
+    "cor": "#9fb4c7",
+    "corSecundaria": "#6f879b",
+    "nivel": "Abertura · Noites 1, 2 e 3",
+    "publico": "Post-punk, darkwave e new wave. Para quem gosta de baixo pulsante e clima de fim de mundo.",
+    "resumo": "Post-punk com sintetizadores, baixo pulsante e letras sobre solidão urbana. O contraponto gelado no meio do barulho.",
+    "descricao": "Sibéria 77 é uma banda curitibana formada em 2017 que mistura post-punk, darkwave e new wave em um som atmosférico e dançante. A banda é presença frequente em festivais independentes do Sul e chega a São Paulo com três apresentações no festival, incluindo uma noite inteira no Palco 2. É o momento de respirar, dançar e olhar para dentro antes do próximo mosh.",
+    "topicos": [
+      "Post-punk, darkwave e sintetizadores",
+      "Três apresentações no festival",
+      "Set noturno completo no Palco 2",
+      "Baixo pulsante e clima de fim de mundo",
+      "Projeções visuais feitas pela banda",
+      "Vinil importado e fanzine à venda",
+      "Meet & Greet na Noite 2",
+      "Versão de clássico da new wave nacional"
+    ],
+    "destaques": [
+      "Três shows em três noites diferentes",
+      "Set estendido no Palco 2 na Noite 2",
+      "Projeções visuais originais criadas pela banda"
+    ],
+    "palestrantes": [
+      {
+        "nome": "Vera Vidro",
+        "cargo": "Voz e sintetizador",
+        "empresa": "Sibéria 77",
+        "avatar": "assets/equipe/band-vera-vidro.svg",
+        "cor": "#9fb4c7",
+        "tags": ["Voz", "Sintetizador", "Darkwave"],
+        "bio": "Voz e sintetizadores da Sibéria 77. Escreve letras sobre insônia, cidades vazias e afetos improváveis. Também assina a direção visual das projeções da banda.",
+        "destaque": true
+      },
+      {
+        "nome": "Ícaro Frio",
+        "cargo": "Guitarra",
+        "empresa": "Sibéria 77",
+        "avatar": "assets/equipe/band-icaro-frio.svg",
+        "cor": "#6f879b",
+        "tags": ["Guitarra", "Efeitos", "Post-punk"],
+        "bio": "Guitarrista da Sibéria 77, especialista em texturas limpas, delay e reverb. Constrói boa parte dos pedais que usa nos shows.",
+        "destaque": false
+      },
+      {
+        "nome": "Mara Lenta",
+        "cargo": "Baixo",
+        "empresa": "Sibéria 77",
+        "avatar": "assets/equipe/band-mara-lenta.svg",
+        "cor": "#b8c8d8",
+        "tags": ["Baixo", "Groove", "New wave"],
+        "bio": "Baixista da banda, responsável pelas linhas melódicas que fazem o público dançar mesmo nos momentos mais sombrios do set.",
+        "destaque": false
+      },
+      {
+        "nome": "Deco Cinza",
+        "cargo": "Bateria",
+        "empresa": "Sibéria 77",
+        "avatar": "assets/equipe/band-deco-cinza.svg",
+        "cor": "#8299ad",
+        "tags": ["Bateria", "Ritmo", "Frieza"],
+        "bio": "Baterista da Sibéria 77, combina batidas secas e programações eletrônicas para criar a base precisa do som da banda.",
+        "destaque": false
+      }
+    ]
+  },
+  {
+    "id": "stoner",
+    "slug": "cortina-de-fumaca",
+    "nome": "Cortina de Fumaça",
+    "tagline": "Stoner e doom para queimar devagar",
+    "icone": "🌫️",
+    "cor": "#b8d96a",
+    "corSecundaria": "#8fb23f",
+    "nivel": "Abertura · Noites 2 e 3",
+    "publico": "Stoner, doom e sludge. Para quem prefere riffs longos, graves profundos e fumaça no ar.",
+    "resumo": "Riffs lentos, graves profundos e uma parede de fumaça. O peso que faz o chão do galpão vibrar antes de qualquer nota.",
+    "descricao": "Cortina de Fumaça faz stoner rock com doses generosas de doom e sludge. A banda de Belo Horizonte é conhecida por shows longos, hipnóticos e por um volume que não pede desculpa. No festival, assume o Palco Principal na Noite 3 e o Palco 2 na Noite 2, sempre com um set que valoriza o peso e a textura.",
+    "topicos": [
+      "Stoner, doom e sludge em sets longos",
+      "Riffs lentos e graves profundos",
+      "Parede de fumaça e luz baixa",
+      "Dois shows no festival",
+      "Vinil e cassete à venda na feira",
+      "Meet & Greet na Noite 2",
+      "Participação na jam de encerramento",
+      "Versão de clássico do rock pesado brasileiro"
+    ],
+    "destaques": [
+      "Set no Palco Principal na Noite 3",
+      "Apresentação com projeção de fumaça e luz baixa",
+      "Participação na jam de encerramento"
+    ],
+    "palestrantes": [
+      {
+        "nome": "Bruna Brasa",
+        "cargo": "Voz e guitarra",
+        "empresa": "Cortina de Fumaça",
+        "avatar": "assets/equipe/band-bruna-brasa.svg",
+        "cor": "#b8d96a",
+        "tags": ["Voz", "Guitarra", "Stoner"],
+        "bio": "Voz e guitarra da Cortina de Fumaça. Escreve riffs longos e letras sobre tempo, deserto e resistência. Também produz o café servido no camarote do festival.",
+        "destaque": true
+      },
+      {
+        "nome": "Toco",
+        "cargo": "Guitarra",
+        "empresa": "Cortina de Fumaça",
+        "avatar": "assets/equipe/band-toco.svg",
+        "cor": "#8fb23f",
+        "tags": ["Guitarra", "Fuzz", "Doom"],
+        "bio": "Guitarrista da banda, obcecado por fuzz e amplificadores valvulados. Constrói e reforma amplificadores como hobby.",
+        "destaque": false
+      },
+      {
+        "nome": "Cimento",
+        "cargo": "Baixo",
+        "empresa": "Cortina de Fumaça",
+        "avatar": "assets/equipe/band-cimento.svg",
+        "cor": "#a3c255",
+        "tags": ["Baixo", "Peso", "Sludge"],
+        "bio": "Baixista da Cortina de Fumaça, responsável pelo peso que sustenta os riffs mais lentos da banda. Toca com cordas mais grossas do que o normal.",
+        "destaque": false
+      },
+      {
+        "nome": "Zeca Pedra",
+        "cargo": "Bateria",
+        "empresa": "Cortina de Fumaça",
+        "avatar": "assets/equipe/band-zeca-pedra.svg",
+        "cor": "#c9e58a",
+        "tags": ["Bateria", "Groove", "Doom"],
+        "bio": "Baterista da banda, especialista em grooves arrastados e viradas que parecem ter peso próprio.",
+        "destaque": false
+      }
+    ]
+  },
+  {
+    "id": "oi",
+    "slug": "motim",
+    "nome": "Motim",
+    "tagline": "Oi! e punk rock de rua",
+    "icone": "✊",
+    "cor": "#f2ece4",
+    "corSecundaria": "#c9bfae",
+    "nivel": "Abertura · Noites 1, 2 e 3",
+    "publico": "Oi!, punk rock e skinhead reggae. Para cantar junto, de punho erguido, até a voz acabar.",
+    "resumo": "Punk rock de rua com refrões feitos para cantar em coro. A banda que abre o festival e faz o galpão inteiro levantar o punho.",
+    "descricao": "Motim é uma banda de Oi! e punk rock formada em Santo André em 2009. Com letras sobre amizade, bairro e resistência, construiu uma base fiel de fãs que acompanha cada show como se fosse o primeiro. No festival, a banda abre as três noites em palcos diferentes e fecha a programação de shows antes do afterparty final.",
+    "topicos": [
+      "Oi! e punk rock de rua",
+      "Abertura das três noites",
+      "Refrões para cantar em coro",
+      "Punho erguido e voz até acabar",
+      "Camisetas e bottons na feira",
+      "Meet & Greet na Noite 1",
+      "Participação na jam de encerramento",
+      "Versão de hino do punk nacional"
+    ],
+    "destaques": [
+      "Abre as três noites do festival",
+      "Show no Palco 2 na Noite 2",
+      "Encerra a programação de shows antes do afterparty final"
+    ],
+    "palestrantes": [
+      {
+        "nome": "Léo Rua",
+        "cargo": "Voz",
+        "empresa": "Motim",
+        "avatar": "assets/equipe/band-leo-rua.svg",
+        "cor": "#f2ece4",
+        "tags": ["Voz", "Oi!", "Hino de rua"],
+        "bio": "Voz do Motim. Escreve hinos sobre bairro, amizade e resistência, e é conhecido por transformar qualquer show em um coro coletivo.",
+        "destaque": true
+      },
+      {
+        "nome": "Kiko Bala",
+        "cargo": "Guitarra",
+        "empresa": "Motim",
+        "avatar": "assets/equipe/band-kiko-bala.svg",
+        "cor": "#c9bfae",
+        "tags": ["Guitarra", "Punk rock", "Melodia"],
+        "bio": "Guitarrista do Motim, responsável pelas melodias que grudam na cabeça e pelos solos curtos e certeiros.",
+        "destaque": false
+      },
+      {
+        "nome": "Naná",
+        "cargo": "Baixo",
+        "empresa": "Motim",
+        "avatar": "assets/equipe/band-nana.svg",
+        "cor": "#e3dacb",
+        "tags": ["Baixo", "Groove", "Oi!"],
+        "bio": "Baixista da banda, sustenta o balanço do Oi! com linhas simples e eficientes que fazem o público andar junto.",
+        "destaque": false
+      },
+      {
+        "nome": "Xande",
+        "cargo": "Bateria",
+        "empresa": "Motim",
+        "avatar": "assets/equipe/band-xande.svg",
+        "cor": "#d6ccba",
+        "tags": ["Bateria", "Rua", "Energia"],
+        "bio": "Baterista do Motim, imprime energia e velocidade a um repertório feito para cantar em coro.",
+        "destaque": false
+      }
+    ]
+  }
+]
