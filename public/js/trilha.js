@@ -1,6 +1,4 @@
-/* ==========================================================================
-   Banda — detalhe individual com integrantes e shows
-   ========================================================================== */
+// Banda: detalhe individual com integrantes e shows
 
 (async function initTrilha() {
   const { api, $, escapeHtml, hexToRgba, observeReveals, param } = TCS;
@@ -61,7 +59,6 @@
     if (heroSection) heroSection.setAttribute('style', vars);
     if (crumb) crumb.textContent = trilha.nome;
 
-    /* ---------- Hero ---------- */
     if (heroContent) {
       heroContent.innerHTML = `
         <div class="trilha-hero-head">
@@ -85,7 +82,6 @@
         </div>`;
     }
 
-    /* ---------- Conteúdo principal ---------- */
     if (main) {
       const topicos = (trilha.topicos || [])
         .map((topico, index) => `
@@ -185,7 +181,6 @@
         </section>`;
     }
 
-    /* ---------- Sidebar ---------- */
     if (side) {
       const outras = (lista.trilhas || []).filter((t) => t.slug !== trilha.slug);
       side.innerHTML = `

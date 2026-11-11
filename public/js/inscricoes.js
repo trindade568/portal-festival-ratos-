@@ -1,6 +1,4 @@
-/* ==========================================================================
-   Ingressos — lotes, formulário e redirecionamento ao checkout simulado
-   ========================================================================== */
+// Ingressos: lotes, formulário e redirecionamento ao checkout simulado
 
 (async function initInscricoes() {
   const { api, $, $$, escapeHtml, formatCurrency, debounce, draft, toast, param } = TCS;
@@ -26,7 +24,6 @@
     return { inteiro, centavos: String(centavos).padStart(2, '0') };
   }
 
-  /* ---------- Lotes ---------- */
 
   function loteHTML(lote, index) {
     const preco = precoSeparado(lote.preco);
@@ -132,7 +129,6 @@
     if (opcoes.toast) toast(`Lote selecionado: ${lote.nome}.`, 'success', 3000);
   }
 
-  /* ---------- Formulário ---------- */
 
   function mascaraTelefone(valor) {
     const digitos = String(valor).replace(/\D/g, '').slice(0, 11);
@@ -251,7 +247,6 @@
     toast('Recuperamos os dados da sua última tentativa de compra.', 'info', 4200);
   }
 
-  /* ---------- Eventos ---------- */
 
   if (telefoneInput) {
     telefoneInput.addEventListener('input', () => {
@@ -312,7 +307,6 @@
     window.location.href = 'checkout.html';
   });
 
-  /* ---------- Carga inicial ---------- */
 
   try {
     const [lotesRes, trilhasRes] = await Promise.all([api('/api/lotes'), api('/api/trilhas')]);

@@ -1,6 +1,4 @@
-/* ==========================================================================
-   Line-up — listagem, busca e filtro em tempo real
-   ========================================================================== */
+// Line-up: listagem, busca e filtro em tempo real
 
 (async function initTrilhas() {
   const { api, $, escapeHtml, debounce, observeReveals } = TCS;

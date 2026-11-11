@@ -1,6 +1,4 @@
-/* ==========================================================================
-   Horários — grade interativa dos shows com filtros e favoritos
-   ========================================================================== */
+// Horários: grade interativa dos shows com filtros e favoritos
 
 (async function initProgramacao() {
   const { api, $, $$, escapeHtml, hexToRgba, observeReveals, param, toast } = TCS;
@@ -46,7 +44,7 @@
     try {
       localStorage.setItem(FAV_KEY, JSON.stringify(Array.from(favoritos)));
     } catch {
-      /* armazenamento indisponível */
+      // sem espaço no navegador
     }
   }
 
@@ -77,7 +75,6 @@
     return trilha ? trilha.cor : '#a89f95';
   }
 
-  /* ---------- Filtros ---------- */
 
   function renderFiltros() {
     const total = dados.sessoes.length;
@@ -123,7 +120,6 @@
     history.replaceState(null, '', url);
   }
 
-  /* ---------- Sessões ---------- */
 
   function sessaoHTML(sessao, index) {
     const cor = corDaSessao(sessao);
@@ -217,7 +213,6 @@
     if (favCountEl) favCountEl.textContent = String(favoritos.size);
   }
 
-  /* ---------- Eventos ---------- */
 
   function limparFiltros() {
     trilhaAtual = 'all';
@@ -291,7 +286,6 @@
     if (event.target.closest('[data-limpar]')) limparFiltros();
   });
 
-  /* ---------- Carga inicial ---------- */
 
   try {
     dados = await api('/api/programacao');

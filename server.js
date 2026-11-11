@@ -1,12 +1,5 @@
-/**
- * Ratos de Porão — 45 Anos de Barulho — Servidor oficial
- * -------------------------------------------------
- * Backend em Node.js puro (sem dependências externas).
- * - Serve o frontend estático (public/)
- * - Expõe uma API REST em /api
- * - Persiste ingressos em data/inscricoes.json
- * - Executa estritamente na porta 2000
- */
+// Servidor do Ratos de Porão — 45 Anos de Barulho
+// Node.js puro: serve o frontend e a API em /api, salva os pedidos em data/inscricoes.json (porta 2000)
 
 const http = require('http');
 const fs = require('fs');
@@ -39,9 +32,7 @@ const MIME = {
   '.map': 'application/json; charset=utf-8'
 };
 
-/* ------------------------------------------------------------------ */
-/* Utilidades                                                          */
-/* ------------------------------------------------------------------ */
+// utilitários
 
 const now = () => new Date();
 
@@ -87,9 +78,7 @@ function digitsOnly(value) {
   return String(value || '').replace(/\D/g, '');
 }
 
-/* ------------------------------------------------------------------ */
-/* Persistência das inscrições (fila serializada + escrita atômica)    */
-/* ------------------------------------------------------------------ */
+// pedidos: fila única e gravação atômica
 
 let storeQueue = Promise.resolve();
 
@@ -145,9 +134,7 @@ function publicInscricao(item) {
   };
 }
 
-/* ------------------------------------------------------------------ */
-/* API                                                                 */
-/* ------------------------------------------------------------------ */
+// API
 
 async function apiEvento(res) {
   const [evento, trilhas, programacao, inscricoes] = await Promise.all([
@@ -338,9 +325,7 @@ async function apiHealth(res) {
   });
 }
 
-/* ------------------------------------------------------------------ */
-/* HTTP helpers                                                        */
-/* ------------------------------------------------------------------ */
+// funções http
 
 function readBody(req) {
   return new Promise((resolve, reject) => {
@@ -372,14 +357,14 @@ async function serveStatic(req, res, pathname) {
   let relative = decodeURIComponent(pathname);
   if (relative === '/' || relative === '') relative = '/index.html';
 
-  // URLs amigáveis: /trilhas -> trilhas.html
+  // /trilhas vira /trilhas.html
   if (!path.extname(relative)) {
     const asHtml = path.join(PUBLIC_DIR, `${relative}.html`);
     try {
       const st = await fsp.stat(asHtml);
       if (st.isFile()) relative = `${relative}.html`;
     } catch {
-      /* mantém o caminho original */
+      // deixa o caminho como veio
     }
   }
 
@@ -405,7 +390,7 @@ async function serveStatic(req, res, pathname) {
         const st = await fsp.stat(notFound);
         return streamFile(req, res, notFound, st, 404);
       } catch {
-        /* segue para 404 JSON */
+        // cai no 404
       }
     }
     return error(res, 404, 'Recurso não encontrado.');
@@ -433,9 +418,7 @@ function streamFile(req, res, filePath, stat, statusCode = 200) {
     .pipe(res);
 }
 
-/* ------------------------------------------------------------------ */
-/* Roteamento                                                          */
-/* ------------------------------------------------------------------ */
+// rotas
 
 async function handleRequest(req, res) {
   const url = new URL(req.url, `http://${req.headers.host || 'localhost'}`);

@@ -1,6 +1,4 @@
-/* ==========================================================================
-   Home — carrega dados reais da API e monta as seções dinâmicas
-   ========================================================================== */
+// Home: busca os dados na API e monta as seções da página
 
 (async function initHome() {
   const { api, $, escapeHtml, observeReveals } = TCS;
@@ -28,21 +26,18 @@
       api('/api/programacao')
     ]);
 
-    /* ---------- Patrocinadores ---------- */
     if (sponsorEl) {
       const nomes = (eventoRes.evento.patrocinadores || []).map((p) => p.nome);
       const group = nomes.map((nome) => `<span class="marquee-item">${escapeHtml(nome)}</span>`).join('');
       sponsorEl.innerHTML = `${group}<span aria-hidden="true" style="display:contents">${group}</span>`;
     }
 
-    /* ---------- Line-up em destaque ---------- */
     if (trilhasEl) {
       trilhasEl.innerHTML = trilhasRes.trilhas
         .map((trilha, index) => TCS.cards.trilha(trilha, index))
         .join('');
     }
 
-    /* ---------- Keynotes ---------- */
     if (keynoteEl) {
       const destaques = [];
       trilhasRes.trilhas.forEach((trilha) => {
@@ -64,7 +59,6 @@
         .join('');
     }
 
-    /* ---------- Dias ---------- */
     if (diasEl) {
       const sessoes = programacaoRes.sessoes || [];
       diasEl.innerHTML = programacaoRes.dias

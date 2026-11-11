@@ -1,8 +1,4 @@
-/**
- * Gerador de avatares vetoriais (SVG) para bandas e equipe de produção.
- * Uso: node tools/gerar-avatares.js
- * Saída: public/assets/equipe/*.svg
- */
+// Gera os avatares SVG das bandas e da equipe. Uso: node tools/gerar-avatares.js
 
 const fs = require('fs');
 const path = require('path');

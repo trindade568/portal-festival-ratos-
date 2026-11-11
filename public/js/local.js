@@ -1,6 +1,4 @@
-/* ==========================================================================
-   Local & infraestrutura — mapa interativo, palcos, setores e serviços
-   ========================================================================== */
+// Local & estrutura: mapa interativo, palcos, setores e serviços
 
 (async function initLocal() {
   const { api, $, escapeHtml, hexToRgba, toast } = TCS;
@@ -17,7 +15,7 @@
   const acessibilidadeEl = $('#acessibilidadeList');
   const servicosEl = $('#servicosGrid');
 
-  /* Layout fixo da planta (coordenadas em um viewBox 900 x 580) */
+  // planta do galpão num viewBox de 900 x 580
   const LAYOUT = {
     orion: { x: 30, y: 30, w: 360, h: 150 },
     nebula: { x: 410, y: 30, w: 220, h: 150 },
@@ -56,7 +54,6 @@
     return '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>';
   }
 
-  /* ---------- Cabeçalho: metadados e horários ---------- */
 
   function renderMeta(local) {
     const itens = [
@@ -81,7 +78,6 @@
       </div>`).join('');
   }
 
-  /* ---------- Mapa interativo ---------- */
 
   function renderLegend(legenda) {
     legendEl.innerHTML = (legenda || []).map((item) => `
@@ -184,7 +180,6 @@
     });
   }
 
-  /* ---------- Palcos, setores, transporte e serviços ---------- */
 
   function renderPalcos(palcos) {
     palcosEl.innerHTML = palcos.map((palco, index) => {
@@ -235,7 +230,6 @@
       </article>`).join('');
   }
 
-  /* ---------- Carga inicial ---------- */
 
   try {
     const { local } = await api('/api/local');

@@ -1,6 +1,4 @@
-/* ==========================================================================
-   Checkout simulado — resumo do pedido, pagamento e confirmação da compra
-   ========================================================================== */
+// Checkout simulado: resumo do pedido, pagamento e confirmação da compra
 
 (function initCheckout() {
   const {
@@ -34,7 +32,6 @@
 
   const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-  /* ---------- Sem rascunho: convida a voltar ---------- */
 
   if (!dados) {
     if (stepsEl) stepsEl.hidden = true;
@@ -51,7 +48,6 @@
     return;
   }
 
-  /* ---------- Resumo do pedido ---------- */
 
   const total = Number(dados.valor) || 0;
 
@@ -75,7 +71,6 @@
 
   renderSummary();
 
-  /* ---------- QR Code e códigos simulados ---------- */
 
   function hashSeed(text) {
     let h = 2166136261;
@@ -166,7 +161,6 @@
   const copyPixBtn = $('#copyPix');
   if (copyPixBtn) copyPixBtn.addEventListener('click', () => copyText(pixCode));
 
-  /* ---------- Seleção do método de pagamento ---------- */
 
   function selectMethod(next) {
     if (!METHOD_LABELS[next]) return;
@@ -216,10 +210,9 @@
     });
   });
 
-  // Estado inicial: painéis ocultos exceto o ativo
+  // começa só com o painel ativo aberto
   panels.forEach((panel) => { panel.hidden = !panel.classList.contains('is-active'); });
 
-  /* ---------- Máscaras do cartão ---------- */
 
   const cardNumero = $('#cardNumero');
   const cardValidade = $('#cardValidade');
@@ -286,7 +279,6 @@
     atualizarParcelas();
   }
 
-  /* ---------- Erros ---------- */
 
   function fieldWrapper(name) {
     const input = form.querySelector(`[name="${name}"]`);
@@ -374,7 +366,6 @@
     return true;
   }
 
-  /* ---------- Confirmação ---------- */
 
   function setProcessing(ativo) {
     processing.classList.toggle('is-visible', ativo);
@@ -486,7 +477,6 @@
     }
   });
 
-  /* ---------- Estado inicial ---------- */
 
   selectMethod('pix');
   TCS.observeReveals();

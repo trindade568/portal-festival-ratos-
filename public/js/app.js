@@ -1,7 +1,4 @@
-/* ==========================================================================
-   Ratos de Porão — 45 Anos de Barulho — núcleo compartilhado do frontend
-   (namespace interno TCS mantido para compatibilidade com os módulos)
-   ========================================================================== */
+// Núcleo compartilhado do frontend: API, toasts e utilitários. (nome interno "TCS" é só por compatibilidade)
 
 const TCS = (() => {
   const $ = (selector, context = document) => context.querySelector(selector);
@@ -11,7 +8,6 @@ const TCS = (() => {
     toastStack: null
   };
 
-  /* ---------- Utilitários ---------- */
 
   function escapeHtml(value) {
     return String(value ?? '')
@@ -100,7 +96,6 @@ const TCS = (() => {
     return payload;
   }
 
-  /* ---------- Toasts ---------- */
 
   function toast(message, type = 'info', timeout = 4600) {
     if (!state.toastStack) {
@@ -150,7 +145,6 @@ const TCS = (() => {
     }
   }
 
-  /* ---------- Header / navegação ---------- */
 
   function initHeader() {
     const header = $('.site-header');
@@ -206,7 +200,6 @@ const TCS = (() => {
     }
   }
 
-  /* ---------- Reveal on scroll ---------- */
 
   let revealObserver = null;
 
@@ -233,7 +226,6 @@ const TCS = (() => {
     elements.forEach((el) => revealObserver.observe(el));
   }
 
-  /* ---------- Back to top ---------- */
 
   function initBackToTop() {
     const button = document.createElement('button');
@@ -250,7 +242,6 @@ const TCS = (() => {
     onScroll();
   }
 
-  /* ---------- Countdown ---------- */
 
   function initCountdown() {
     const container = $('[data-countdown]');
@@ -290,7 +281,6 @@ const TCS = (() => {
     setInterval(tick, 1000);
   }
 
-  /* ---------- Session storage (rascunho do ingresso) ---------- */
 
   const DRAFT_KEY = 'rdp.ingresso.rascunho';
 
@@ -315,12 +305,11 @@ const TCS = (() => {
       try {
         sessionStorage.removeItem(DRAFT_KEY);
       } catch {
-        /* noop */
+        // ignora
       }
     }
   };
 
-  /* ---------- Inicialização ---------- */
 
   function init() {
     initHeader();

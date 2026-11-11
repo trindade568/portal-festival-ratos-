@@ -1,6 +1,4 @@
-/* ==========================================================================
-   Produção — equipe do festival e informações acadêmicas
-   ========================================================================== */
+// Produção: equipe do festival e informações acadêmicas
 
 (async function initQuemSomos() {
   const { api, $, escapeHtml, hexToRgba, toast } = TCS;

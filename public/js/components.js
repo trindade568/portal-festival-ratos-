@@ -1,6 +1,4 @@
-/* ==========================================================================
-   Componentes reutilizáveis de interface
-   ========================================================================== */
+// Componentes reutilizáveis de interface
 
 (function () {
   const { escapeHtml, hexToRgba } = TCS;
